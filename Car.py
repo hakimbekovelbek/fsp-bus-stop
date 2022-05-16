@@ -33,8 +33,15 @@ class Car:
                 print(err)
                 return err
 
-    def fill_tank(self):
-        self.gas_left = self.volume
+    def fill_tank(self, added_fuel):
+        if added_fuel < self.volume:
+            self.gas_left = added_fuel
+        else:
+            try:
+                raise ValueError('You dont have enough space in your fuel_bank try to decrease the amount of fuel')
+            except ValueError as err:
+                print(err)
+                return err
 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
@@ -46,7 +53,7 @@ print(matiz.gas_left)
 matiz.ride(300)
 print(matiz.gas_left)
 matiz.ride(200)
-matiz.fill_tank()
+matiz.fill_tank(40)
 print(matiz.available())
 
 
