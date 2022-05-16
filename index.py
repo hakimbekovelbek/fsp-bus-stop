@@ -36,3 +36,4 @@ def car(max_s, left, cons):
     elif a == '3':
         b = left / cons * 100
         print(f"{int(left)}, {int(b)}км")
+
