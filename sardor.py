@@ -16,7 +16,7 @@ class Car:
         gas_fill = int(input("How much liters do you want pour: "))
         empty = self.capacity - self.rate
         if gas_fill > empty:
-            raise Error('Your tank are not able to fill this amount')
+            print('Your tank are not able to fill this amount')
         else:
             filled = self.rate + gas_fill
         self.rate = filled
