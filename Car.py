@@ -64,7 +64,10 @@ class Car:
         if type in types:
             return types[type] * litres 
         else:
-            return "We do not have this type!"
+            print( "We do not have this type!" +"\n Our types")
+            for i in types:
+                print(i)
+
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
         return (self.gas_left, available_dist)
