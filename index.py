@@ -6,16 +6,16 @@ class Car:
         self.oilExpenditure = oilExpenditure
 
     def fill_tank(self):
-        self.presence = int(input('fill tank'))
+        self.presence = int(input('наполнять'))
         return(self.presence)
 
     def available_distance(self):
         if self.capacity >= self.oilExpenditure:
             print(self.presence * 100/self.oilExpenditure)
             if self.presence > 75:
-                print('too much oil')
+                print('много')
             else:
-                print('need more')
+                print('мало')
 
 lacceti = Car(75, 55, 15)
 lacceti.fill_tank()
