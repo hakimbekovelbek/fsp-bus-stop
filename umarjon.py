@@ -7,9 +7,14 @@ class Car:
         self.filled = filled
         self.consuption = consuption
 
-    def fill_tank(self):
-        self.filled = self.volume
-        print('Tank is filled!')
+    def fill_tank(self, fuel_volume):
+        if self.filled + fuel_volume > self.volume:
+            print('Fuel volume over than tank volume!')
+            return
+        else:
+            self.filled += fuel_volume
+            print('Tank is filled!')
+            return
     
     def available_distance(self):
         av_distance = round(self.filled / self.consuption * 100)
