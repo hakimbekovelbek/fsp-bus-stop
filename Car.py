@@ -39,6 +39,22 @@ class Car:
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
         return (self.gas_left, available_dist)
+    def pour_gas(self , quantity):
+        try:
+            if not isinstance(quantity , (float , int)):
+                raise ValueError("Enter a number!")
+        except Exception as err:
+            print(err)
+            return err
+        if self.gas_left + quantity < self.volume:
+            self.gas_left += quantity
+        else:
+            try:
+                raise ValueError("Too much fuil")
+            except Exception as err:
+                print(err)
+                return err
+            
 
 matiz = Car(35, 25, 8)
 
@@ -46,7 +62,8 @@ print(matiz.gas_left)
 matiz.ride(300)
 print(matiz.gas_left)
 matiz.ride(200)
-matiz.fill_tank()
+# matiz.fill_tank()
 print(matiz.available())
+(matiz.pour_gas(224))
 
 
