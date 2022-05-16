@@ -34,7 +34,7 @@ class Car:
                 return err
 
     def fill_tank(self):
-        self.gas_left = self.volume
+        self.gas_left = self.gas_left
 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
@@ -45,8 +45,6 @@ matiz = Car(35, 25, 8)
 print(matiz.gas_left)
 matiz.ride(300)
 print(matiz.gas_left)
-matiz.ride(200)
+# matiz.ride(200)
 matiz.fill_tank()
 print(matiz.available())
-
-

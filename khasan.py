@@ -1,3 +1,6 @@
+from calendar import c
+
+
 class Car:
     def __init__(self, value, oil, consumtion):
         self.value = value
@@ -11,10 +14,10 @@ class Car:
         a = (s / 15) * 100
         print('avaible_distance with ',s,'litr', a)
     def fill_tank(self):
-        i = 100
-        print('bezine tank full', i)
+        c= self.oil = self.oil
+        return c
 
 captiva = Car(75,20,15)
-captiva.avaible_distance()
-captiva.avaible_distance2()
-captiva.fill_tank()
+print(captiva.avaible_distance())
+print(captiva.avaible_distance2())
+print('your tank is full', captiva.fill_tank())
