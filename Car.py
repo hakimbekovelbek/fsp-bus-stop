@@ -33,8 +33,21 @@ class Car:
                 print(err)
                 return err
 
-    def fill_tank(self):
-        self.gas_left = self.volume
+    def fill_tank(self , quantity):
+        try:
+            if not isinstance(quantity , (float , int)):
+                raise ValueError("Enter a number!")
+        except Exception as err:
+            print(err)
+            return err
+        if self.gas_left + quantity < self.volume:
+            self.gas_left += quantity
+        else:
+            try:
+                raise ValueError("Too much fuil")
+            except Exception as err:
+                print(err)
+                return err 
 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
