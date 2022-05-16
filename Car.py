@@ -6,9 +6,9 @@
 # заполнить бензобак
 # показать сколько мы можем проехать км и остаток бензина
 
-from msilib.schema import Error
-
-
+gas_types = {
+    80: 6400,
+}
 class Car:
     def __init__(self, volume, gas_left, consumption):
         self.volume = volume
@@ -42,12 +42,16 @@ class Car:
             return err
         if self.gas_left + quantity < self.volume:
             self.gas_left += quantity
+            # return ...
         else:
             try:
                 raise ValueError("Too much fuil")
             except Exception as err:
                 print(err)
                 return err 
+
+    def calc_gas_costs(self, type, litres):
+        pass            
 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
@@ -61,5 +65,17 @@ print(matiz.gas_left)
 matiz.ride(200)
 matiz.fill_tank()
 print(matiz.available())
+
+
+class Person:
+    def __init__(self, money):
+        self.money = money
+
+    def pay_money(self, amount):
+        self.money -= self.amount
+
+iskandar = Person(300_000)
+money_to_pay = matiz.calc_gas_costs()
+iskandar.pay_money(money_to_pay)
 
 
