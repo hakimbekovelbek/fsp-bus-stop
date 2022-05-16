@@ -6,16 +6,21 @@
 V = 70
 C = 100 # ! this const number is km 
 class Car:
-    def __init__(self, capacity, rate, consumption) -> None:
+    def __init__(self, capacity, rate, consumption, ) -> None:
         self.capacity = capacity
         self.rate = rate
         self.consumption = consumption
+        
     
     def fill_tank(self):
+        gas_fill = int(input("How much liters do you want pour: "))
         empty = self.capacity - self.rate
-        full = self.rate + empty
-        self.rate = full
-        if full == self.capacity: return f'Yor tank filled to {self.rate}'
+        if gas_fill > empty:
+            raise Error('Your tank are not able to fill this amount')
+        else:
+            filled = self.rate + gas_fill
+        self.rate = filled
+        return f'Yor tank filled to {filled}'
 
     def available_distance(self):
         distance = (self.rate * C) / self.consumption
@@ -23,11 +28,11 @@ class Car:
 
     def ride(self, distance):
         
-        time = distance / 70
+        
         consumed = distance * (self.consumption / 100)
         balance = self.rate - consumed
         return f'''
-        Time: {round(time,1)} Hrs
+        
         Consumed oil: {consumed}
         Remaining fuel: {balance}'''
 
