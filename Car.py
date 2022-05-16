@@ -8,7 +8,11 @@
 
 from msilib.schema import Error
 
-
+gas_types={
+        80: 6400,
+        91:7500,
+        90:7200
+    }
 class Car:
     gas_types={
         80: 6400,
@@ -100,3 +104,22 @@ print(matiz.gas_left)
 print(matiz.fill_tank(12 , 91))
 
 
+class Person:
+    def __init__(self, money):
+        self.money = money
+    def pay_money(self , amount):
+        try:
+            if not isinstance(amount , (int , float)):
+                raise TypeError("Sorry but you can pay for this!")
+        except Exception as err:
+            print(err)
+            return err
+        if self.money - amount >0:
+            self.money -= amount
+            return "Successfull!"
+        else:
+            return f"You can't pay for this because you do not have enough money!"
+        self.money -= amount
+
+
+iskandar = Person(300_00)
