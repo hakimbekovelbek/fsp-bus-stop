@@ -1,9 +1,8 @@
 class Car:
-    def __init__(self,amount,oil,consumption,distance):
+    def __init__(self,amount,oil,consumption):
         self.amount=amount
         self.oil=oil
         self.consumption=consumption
-        self.distance=distance
     def fill_tank(self):
 
         if self.amount >= self.oil:
@@ -13,9 +12,9 @@ class Car:
             print("U can not fill your tank more than capacity")
     def available_distance(self):
         return f'your available distance is {self.oil} L for {self.oil / 0.15} km'
-    def ride(self):
-        time = self.distance / 70
-        consumed = self.distance * 0.15
+    def ride(self,distance):
+        time = distance / 70
+        consumed = distance * 0.15
         balance=self.oil - consumed
         return f'''
         Time: {round(time,1)} Hrs
@@ -25,7 +24,7 @@ class Car:
         
         
 
-Lacetti =Car(75,55,15,100)
+Lacetti =Car(75,55,15)
 # print(Lacetti.available_distance())
 print(Lacetti.fill_tank())
 print(Lacetti.ride())
