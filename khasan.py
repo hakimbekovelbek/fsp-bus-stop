@@ -7,12 +7,12 @@ class Car:
         c = (self.oil / self.consumtion) * 100
         print('avaible_distance with ',self.oil, 'litr', c)
     def avaible_distance2(self):
-        s = (self.oil - 15) 
-        a = (s / 15) * 100
+        s = (self.oil - self.consumtion) 
+        a = (s / self.consumtion) * 100
         print('avaible_distance with ',s,'litr', a)
     def fill_tank(self):
-        i = 100
-        print('bezine tank full', i)
+        s = self.oil == self.oil
+        print('bezine tank full', s)
 
 captiva = Car(75,20,15)
 captiva.avaible_distance()
