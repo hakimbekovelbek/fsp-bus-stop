@@ -5,7 +5,7 @@ def calcLengthOfSlice(x1, y1, x2, y2):
 class Point:
     def __init__(self, x, y):
         self.x = x
-        self.y = y
+        self.y = y  
 
     def get_coords(self):
         return (self.x, self.y)
