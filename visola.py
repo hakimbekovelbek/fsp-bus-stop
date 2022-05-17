@@ -47,7 +47,7 @@ class Item():
         self.title = title
         self.price = price
 
-class Cart(Item):
+class Cart():
     def __init__(self):
         self.titles = []
         self.price = []
