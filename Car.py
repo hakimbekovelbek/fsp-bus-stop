@@ -6,7 +6,6 @@
 # показать сколько мы можем проехать км и остаток бензина
 
 
-from msilib.schema import Error
 
 fuel_type = {
     80: 6500,
