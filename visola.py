@@ -1,3 +1,6 @@
+from turtle import title
+
+
 class Car:
     def __init__(self, max_s, left, cons):
         self.max_s = max_s 
@@ -37,3 +40,44 @@ def car(max_s, left, cons):
         b = left / cons * 100
         print(f"{int(left)}, {int(b)}км")
 
+
+
+class Item():
+    def __init__(self, title, price):
+        self.title = title
+        self.price = price
+
+class Cart(Item):
+    def __init__(self):
+        self.titles = []
+        self.price = []
+
+    def add_item(self, item):
+        self.titles.append(item.title)
+        self.price.append(item.price)
+    
+    def show_items(self):
+        for i in set(self.titles):
+            print(i, self.titles.count(i))
+    
+    def total_price(self):
+        price = 0
+        for i in self.price:
+            price += i
+        print(price)
+    
+    def remove_item(self, item):
+        self.titles.remove(item.title)
+        self.price.remove(item.price)
+
+
+
+milk = Item('milk', 10_000)
+cart = Cart()
+cart.add_item(milk)
+cart.add_item(milk)
+cart.show_items()
+cart.total_price()
+cart.remove_item(milk)
+cart.show_items()
+cart.total_price()
