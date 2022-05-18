@@ -44,14 +44,4 @@ class Car:
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
         return (self.gas_left, available_dist)
-
-matiz = Car(35, 25, 8)
-
-print(matiz.gas_left)
-matiz.ride(300)
-print(matiz.gas_left)
-matiz.ride(200)
-matiz.fill_tank()
-print(matiz.available())
-
-
+        
