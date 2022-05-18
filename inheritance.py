@@ -22,11 +22,15 @@
 # f = Geometry(4, 5)  
 # print(f.sqare())
 # print(f.rectangle())
-
 class Parallelogram:
-    def __init__(self,a,b):
+    def __init__(self,a,b, angle):
         self.a = a
         self.b = b
+        self.angle  = angle
+
+    def area(self):
+        from math import sin, radians
+        return self.a * self.b * sin(radians(self.angle))
 
 class Rectangle(Parallelogram):
     def __init__(self, a, b):
@@ -42,8 +46,12 @@ class Square(Parallelogram):
 
 
 
-rect = Rectangle(2,3)
-print('rect',rect.a, rect.b)
+# rect = Rectangle(2,3)
+# print('rect',rect.a, rect.b)
 
-rombus = Rombus(5)
-print('rombus',rombus.a)
+# rombus = Rombus(5)
+# print('rombus',rombus.a)
+
+
+p1 = Parallelogram(10,10,90)
+print(p1.area())
