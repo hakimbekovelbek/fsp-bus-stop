@@ -123,3 +123,19 @@ cart.show_items()
 cart.total_price()
 
 
+
+class Parallellogram:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    
+class Rectangle(Parallellogram):
+    def __init__(self, a, b):
+        Parallellogram.__init__(self, a, b)
+
+class Rhombus(Parallellogram):
+    def __init__(self, a):
+        self.a = a
+
+class Square(Rhombus):
+    pass
