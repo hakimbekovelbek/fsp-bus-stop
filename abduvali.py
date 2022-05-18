@@ -1,29 +1,22 @@
 # This line is from Abduvali's laptop
 # This is new file in abduvali.py file
-class Car:
-    def __init__(self,amount,oil,consumption,distance):
-        self.amount=amount
-        self.oil=oil
-        self.consumption=consumption
-        self.distance=distance
-    def fill_tank(self):
-        a=self.oil=75 
-        print( f'your tank is filled to {a} L')
-    def available_distance(self):
-        return f'your available distance is {self.oil} L for {self.oil / 0.15} km'
-    def ride(self):
-        time = self.distance / 70
-        consumed = self.distance * 0.15
-        balance=self.oil - consumed
-        return f'''
-        Time: {round(time,1)} Hrs
-        Consumed oil: {consumed}
-        Remaining fuel: {balance}'''
-        
-        
-        
 
-Lacetti =Car(75,55,15,100)
-# print(Lacetti.available_distance())
-# print(Lacetti.fill_tank())
-print(Lacetti.ride())
+class paralelogram:
+    def __init__(self,a_side,b_side):
+        self.a=a_side
+        self.b=b_side
+class square(paralelogram):
+    def __init__(self,a):
+        self.a= a
+
+class rectangular(paralelogram):
+    def __init__(self):
+        square = self.a * self.b
+        print(square)
+class rhombus(paralelogram):
+    def __init__(self,a):
+        self.a=a
+
+parallelogram=paralelogram(5,8)
+Rhombus=rhombus(4)
+print(Rhombus.a)
