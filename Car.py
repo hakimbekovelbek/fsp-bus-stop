@@ -133,8 +133,8 @@ class Item:
 class Cart:
     products = []
     products_total_price = 0
-    def __init__(self , product):
-        self.products.append(product)
+    # def __init__(self , product):
+    #     self.products.append(product)
     def add_item(self , new_product):
         self.products.append(new_product)
     def show_items(self):
@@ -146,16 +146,13 @@ class Cart:
         print( self.products_total_price)
     def remove_item(self , product , count):
         try:
-            if self.products.count(product) >= count:
-                for i in range(count):
-                    self.products.remove(product)
-            else:
-                raise ValueError("You have fewer products than you entered")
+            for i in range(count):
+                self.products.remove(product)
         except Exception as err:
             print(err)
             return err
 milk  = Item('Milk' , 10_000)
-cart = Cart(milk)
+cart = Cart()
 cart.add_item(milk)
 cart.add_item(milk)
 cart.show_items()
