@@ -29,6 +29,14 @@
 # Malibu.пополнение_бака()   
 
 
+gas_types = {
+    80: 6400,
+    92: 9000,
+    98: 13000
+    
+}
+
+
 class Car:
     def __init__(self, volume, gas_left, consumption):
         self.volume = volume
@@ -53,21 +61,36 @@ class Car:
                 print(err)
                 return err
 
-    def fill_tank(self , quantity):
+    def fill_tank(self , quantity, fuel_type):
         try:
-            if not isinstance(quantity , (float , int)):
+            if not(isinstance(quantity , (float , int))) or not(isinstance(quantity, (float, int))):
                 raise ValueError("Enter a number!")
         except Exception as err:
             print(err)
             return err
-        if self.gas_left + quantity < self.volume:
+        if self.gas_left + quantity < self.volume and fuel_type in fuel_type:
             self.gas_left += quantity
+            cost = quantity * fuel_type[fuel_type]
+            print(f'It costs {cost} sums')
+            return cost 
         else:
             try:
-                raise ValueError("Too much fuil")
+                if self.filled + quantity > self.volume:
+                    raise ValueError("Too much fuil")
+                else: raise TypeError ("Please select correct type of fuel!")    
             except Exception as err:
                 print(err)
                 return err 
+
+    def calc_gas_costs(self, type, litres):
+        if type == 80:
+            print(litres * 6400)
+        if type == 92:
+            print(litres * 9000)
+        if type == 98:
+            print(litres * 13000)    
+        return   
+
 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
@@ -79,5 +102,22 @@ print(matiz.gas_left)
 matiz.ride(300)
 print(matiz.gas_left)
 matiz.ride(200)
-matiz.fill_tank(19)
-print(matiz.available())
+print(matiz.available()) 
+print(matiz.calc_gas_costs(80, 20*6400))
+matiz.fill_tank(20, 80)
+
+class Person:
+    def __init__(self, money):
+        self.money = money
+
+    def pay_money(self, amount):
+        if amount > self.money:
+            print("")
+        else:    
+            self.money -= self.amount
+    
+
+person = Person(300_000)
+money_to_pay = matiz.calc_gas_costs()
+person.pay_money(money_to_pay)            
+
