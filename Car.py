@@ -123,3 +123,41 @@ class Person:
 
 
 iskandar = Person(300_00)
+
+
+# !
+class Item:
+    def __init__(self , title , price):
+        self.title = title
+        self.price = price
+class Cart:
+    products = []
+    products_total_price = 0
+    def __init__(self , product):
+        self.products.append(product)
+    def add_item(self , new_product):
+        self.products.append(new_product)
+    def show_items(self):
+        for product in self.products:
+            print("Name: " + product.title , "Price: " + str(product.price))
+    def total_price(self):
+        for product_price in self.products:
+            self.products_total_price += product_price.price
+        print( self.products_total_price)
+    def remove_item(self , product , count):
+        try:
+            if self.products.count(product) >= count:
+                for i in range(count):
+                    self.products.remove(product)
+            else:
+                raise ValueError("You have fewer products than you entered")
+        except Exception as err:
+            print(err)
+            return err
+milk  = Item('Milk' , 10_000)
+cart = Cart(milk)
+cart.add_item(milk)
+cart.add_item(milk)
+cart.show_items()
+cart.total_price()
+cart.remove_item(milk , 5)
