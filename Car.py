@@ -6,7 +6,6 @@
 # заполнить бензобак
 # показать сколько мы можем проехать км и остаток бензина
 
-from msilib.schema import Error
 
 
 class Car:
@@ -36,6 +35,12 @@ class Car:
     def fill_tank(self):
         self.gas_left = self.gas_left
 
+    def calc_gas_price(self,type, litres):
+        if type == 80:
+            print(litres * 6400)
+        elif type == 91 or 92:
+            print(litres * 9000)
+        return 
     def available(self):
         available_dist = (self.gas_left * 100) / self.consumption
         return (self.gas_left, available_dist)
