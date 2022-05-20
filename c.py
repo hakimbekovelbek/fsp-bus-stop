@@ -1,5 +1,5 @@
 from math import *
-from tkinter import S
+
 class Parallelogram:
     def __init__(self, a, b, angle):
         self.a = a
