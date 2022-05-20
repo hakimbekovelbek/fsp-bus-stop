@@ -22,6 +22,8 @@
 # f = Geometry(4, 5)  
 # print(f.sqare())
 # print(f.rectangle())
+
+
 class Parallelogram:
     def __init__(self,a,b, angle):
         self.a = a
@@ -31,27 +33,74 @@ class Parallelogram:
     def area(self):
         from math import sin, radians
         return self.a * self.b * sin(radians(self.angle))
+    
+    def perimetr(self):
+        p = (self.a + self.b) * 2
+        return 'perimetr paralillogram - ', p
+
 
 class Rectangle(Parallelogram):
-    def __init__(self, a, b):
-        Parallelogram.__init__(self,a,b)
+    def __init__(self, a, b,angle):
+        Parallelogram.__init__(self, a, b , angle)
+
+    def area(self):
+        a = self.a * self.b
+        return 'rectangle area - ', a
+        
+
+    def perimetr(self):
+        p = (self.a + self .b) * 2
+        return 'perimeter of rectangle', p
+        
+
+
 
 class Rombus(Parallelogram):
-    def __init__(self, a):
+    def __init__(self, a,angle):
         self.a = a
+        self.angle = angle
+    def perimetr(self):
+        p = self.a * 4
+        return'area romb', p
+        
+    def area(self):
+        from math import sin, radians
+        a = (self.a ** 2) * sin(radians(self.angle))
+        return'area rombus', a
+        
 
 class Square(Parallelogram):
-    pass
+    def __init__(self, a):
+        self.a = a
+        
+
+    def area(self):
+        a = self.a ** 2
+        return'area - ', a
+         
+
+    def perimtr(self):
+       c = (self.a + self.a ) * 2
+       return 'perimetr - ',c
+       
 
 
 
-
-# rect = Rectangle(2,3)
-# print('rect',rect.a, rect.b)
-
-# rombus = Rombus(5)
-# print('rombus',rombus.a)
+parallelogram = Parallelogram(10,10,90)
+print('area of parallelogram - ',parallelogram.area())
+print(parallelogram.perimetr())
 
 
-p1 = Parallelogram(10,10,90)
-print(p1.area())
+rect = Rectangle(2,3 ,90)
+print(rect.area())
+print(rect.perimetr())
+
+
+rombus = Rombus(2,30)
+print(rombus.area())
+print(rombus.perimetr())
+
+
+square = Square(4)
+print(square.area())
+print(square.perimtr())
