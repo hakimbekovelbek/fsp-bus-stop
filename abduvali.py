@@ -11,6 +11,8 @@ class paralelogram:
 class square(paralelogram):
     def __init__(self,a):
         self.a= a
+    def area(self):
+        return self.a * self.a
 
 class rectangular(paralelogram):
     def __init__(self):
@@ -19,10 +21,15 @@ class rectangular(paralelogram):
 class rhombus(paralelogram):
     def __init__(self,a):
         self.a=a
+    def area(self):
+        return self.a * self.a
+    
 
 class rectangle(paralelogram):
-    def __init__(self,a,b):
+    def __init__(self):
         paralelogram.__init__
+    def area(self):
+        return self.a * self.b
 
 parallelogram=paralelogram(5,8)
 Rhombus=rhombus(4)
