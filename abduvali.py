@@ -2,12 +2,11 @@
 # This is new file in abduvali.py file
 import math
 class paralelogram:
-    def __init__(self,a_side,b_side,angle):
+    def __init__(self,a_side,b_side):
         self.a=a_side
         self.b=b_side
-        self.angle=angle
-    def area(self):
-        return self.a * self.b * math.sin(self.angle)
+    def area(self,angle):
+        return self.a * self.b * math.sin(angle)
 class square(paralelogram):
     def __init__(self,a):
         self.a= a
@@ -33,4 +32,3 @@ class rectangle(paralelogram):
 
 parallelogram=paralelogram(5,8)
 Rhombus=rhombus(4)
-print(Rhombus.a)
