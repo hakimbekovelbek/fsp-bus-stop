@@ -34,13 +34,13 @@ class Satelitte(Sky_object):
         
 earth = Planet('earth', 'solid', int(5.97e21))      
 print(earth.mass)
-# class EarthPlsnet(Sky_object):
-#     def __init__(self,name):
-#         Sky_object.__init__(self,name)
+class EarthPlsnet(Sky_object):
+    def __init__(self,name):
+        Sky_object.__init__(self,name)
 
 
 
-# earth = Planet('Earth', 'solid')
-# earth.rotate()
+earth = Planet('Earth', 'solid')
+earth.rotate()
 
 

@@ -9,18 +9,33 @@
 
 class Card:
     item = []
-    def __init__(self, item):
-        self.item = item.append()
+    # def __init__(self, item):
+    
+        # self.item = item.append()
 
-    def add_item(self):
-        self.item.append()
+    def add_item(self, item):
+        self.item.append(item)
+
+    
+    def remove_item(self, title, amount = 1):
+        try:
+            for i in range(amount):
+                self.items.remove(title)
+        except:
+            print('Error, enter correct titlle or amount')
+            return
+        
 
     def show_item(self):
-        self.item = 0
+        for item in self.item:
+            print('Name' + item.title, 'Price' + str(item.price))
+
     
-    def remove_item(self):
-        pass
 
     def total_item(self):
         pass
+
+milk = Card
+print(milk.add_item(milk,))
+print(milk.remove_item(milk,))
 
