@@ -100,19 +100,53 @@
 
 
 
+# ! do not work
+
+# from typing import overload
+
+# class Math:
+#     @overload
+
+#     def sum(self, a,b):
+#         print(a + b)
+
+#     def sum(self, a, b, c):
+#         print(a + b + c)
 
 
-from typing import overload
-
-class Math:
-    @overload
-
-    def sum(self, a,b):
-        print(a + b)
-
-    def sum(self, a, b, c):
-        print(a + b + c)
+# sum(1,2)
+# sum(1,2,3)
 
 
-sum(1,2)
-sum(1,2,3)
+
+
+
+
+
+
+
+class Matrix:
+    size = 2
+    size2 = []
+    
+    def __init__(self):
+        self.matrix = []
+        for rows_number in range(1,self.size+1):
+            row = []
+            for col_number in range(1,self.size+1):
+                
+                num = int(input(f'enter {rows_number}.{col_number} - '))
+                row.append(num)
+            self.matrix.append(row)
+
+    def __mul__(self, C = 2):
+        a = self.size * C
+        return Matrix (a)
+
+m1 = Matrix()
+print(m1 * 2)
+# m2 = Matrix()
+# print(m1.matrix)
+# print(m2.matrix)
+# m1.size2 = 'pxp'
+# print(m1.size2)
