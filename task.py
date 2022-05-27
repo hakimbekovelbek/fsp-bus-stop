@@ -1,6 +1,3 @@
-from tabnanny import check
-
-
 class KgToPounds:
     def __init__(self , kg): # конструктор принимает 1 аргумент
         self.__kg = kg
