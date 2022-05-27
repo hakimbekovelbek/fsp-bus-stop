@@ -16,5 +16,5 @@ class KgToPounds:
 
 
 
-weight = KgToPounds(4)
+weight = KgToPounds(45)
 print(weight.kg)
