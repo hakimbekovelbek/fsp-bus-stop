@@ -1,8 +1,3 @@
-
-
-from typing import Type
-
-
 class KgToPounds:
 
     def __init__(self, kg):
@@ -23,13 +18,6 @@ class KgToPounds:
             self._kg = new_kg
 
 
-# pound = KgToPounds(32)
-# print(pound.to_pounds())
-# pound.kg = 58943242
-# print(pound.kg)
-# print(pound.to_pounds())
-
-
 
 class Country:
     def __init__(self, ppl):
@@ -48,15 +36,9 @@ class Russia(Country):
 class Canada(Country):
     pass
 
-
 class Germany(Country):
     pass
 
-
-# rus = Russia(140000000)
-# print(rus.ppl)
-# rus.ppl = 150000000
-# print(rus.ppl)
 
 
 
@@ -67,7 +49,7 @@ def sum(first = 0, second = 0, third = 0, fourth = 0, fifth = 0, sixth = 0, seve
         sum += num
     return sum
 
-# print(sum(second = 20, first = 8987))
+
 
 
 class TriangleChecker:
@@ -86,6 +68,4 @@ class TriangleChecker:
             return ('It is not possible')
         else: return ('Yeah you can do it')
 
-tr = TriangleChecker(3, -4, 4)
-print(tr.is_triangle())
 
