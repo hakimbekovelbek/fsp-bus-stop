@@ -1,47 +1,47 @@
 
 
-# class Sky_object:
-#     def __init__(self, name):
-#         self.name = name
+class Sky_object:
+    def __init__(self, name):
+        self.name = name
 
-# class Star(Sky_object):
-#     def __init__(self,name, color):
-#         Sky_object.__init__(name)
-#         self.color = color
+class Star(Sky_object):
+    def __init__(self,name, color):
+        Sky_object.__init__(name)
+        self.color = color
 
-# class Planet(Sky_object):
-#     def __init__(self,name, type, mass):
-#         Sky_object.__init__(self, name)
-#         self.type = type
-#         self._mass = mass
+class Planet(Sky_object):
+    def __init__(self,name, type, mass):
+        Sky_object.__init__(self, name)
+        self.type = type
+        self._mass = mass
 
-#     def rotate(self):
-#         print(f'{self.name} is rotating ... ')
+    def rotate(self):
+        print(f'{self.name} is rotating ... ')
 
-#     @property
-#     def mass(self):
-#         return self._mass
-#     @mass.setter
-#     def mass(self,new_mass):
-#         if not(isinstance(new_mass, int)):
-#             raise ValueError('Mass ought to be int')
-#         self._mass = new_mass   
+    @property
+    def mass(self):
+        return self._mass
+    @mass.setter
+    def mass(self,new_mass):
+        if not(isinstance(new_mass, int)):
+            raise ValueError('Mass ought to be int')
+        self._mass = new_mass   
     
-# class Satelitte(Sky_object):
-#     def __init__(self,name):
-#         Sky_object.__init__(self,name)
-#         self.name = name
+class Satelitte(Sky_object):
+    def __init__(self,name):
+        Sky_object.__init__(self,name)
+        self.name = name
         
-# earth = Planet('earth', 'solid', int(5.97e21))      
-# print(earth.mass)
-# class EarthPlsnet(Sky_object):
-#     def __init__(self,name):
-#         Sky_object.__init__(self,name)
+earth = Planet('earth', 'solid', int(5.97e21))      
+print(earth.mass)
+class EarthPlsnet(Sky_object):
+    def __init__(self,name):
+        Sky_object.__init__(self,name)
 
 
 
-# earth = Planet('Earth', 'solid')
-# earth.rotate()
+# earth = Planet('Earth', 'solid',55)
+earth.rotate()
 
 # !
 # def sum (a,b,c,d):
@@ -125,26 +125,26 @@
 
 
 
-class Matrix:
-    size = 2
-    size2 = []
+# class Matrix:
+#     size = 2
+#     size2 = []
     
-    def __init__(self):
-        self.matrix = []
-        for rows_number in range(1,self.size+1):
-            row = []
-            for col_number in range(1,self.size+1):
+#     def __init__(self):
+#         self.matrix = []
+#         for rows_number in range(1,self.size+1):
+#             row = []
+#             for col_number in range(1,self.size+1):
                 
-                num = int(input(f'enter {rows_number}.{col_number} - '))
-                row.append(num)
-            self.matrix.append(row)
+#                 num = int(input(f'enter {rows_number}.{col_number} - '))
+#                 row.append(num)
+#             self.matrix.append(row)
 
-    def __mul__(self, C = 2):
-        a = self.size * C
-        return Matrix (a)
+#     def __mul__(self, C = 2):
+#         a = self.size * C
+#         return Matrix (a)
 
-m1 = Matrix()
-print(m1 * 2)
+# m1 = Matrix()
+# print(m1 * 2)
 # m2 = Matrix()
 # print(m1.matrix)
 # print(m2.matrix)
