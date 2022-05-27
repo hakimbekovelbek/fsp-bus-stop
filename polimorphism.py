@@ -35,3 +35,50 @@
 #         print(a+b+c)
 
 # sum(12,67)
+
+# def area(a=None,b=None):
+#     if a==None and b ==None:
+#         print(0)
+#     elif b ==None:
+#         print(a*a)
+#     else:
+#         print(a*b)
+# area()
+# area(2)
+# area(2,6)
+
+
+# from inspect import signature
+# from typing import overload
+
+# class Math:
+#     @overload
+#     # @signature
+#     def sum(self,a,b):
+#         print(a+b)
+    
+#     @sum.overload
+#     # @signature("three")
+#     def sum(self,a,b,c):
+#         print(a+b+c)
+
+# a = Math()
+# a.sum(1,2)
+# a.sum(1,210)
+# class Matrix:
+#     size=3
+#     matrix=[]
+#     def __init__(self):
+#         for row in range(1,self.size+1):
+#             row=[]
+#             for column_num in range(1,self.size+1):
+#                 num = int(input(f'Enter {row}.{column_num}: '))
+#                 row.append(num)
+#             self.matrix.append(row)
+# m1=Matrix()
+# print(m1.matrix)
+
+
+
+
+
