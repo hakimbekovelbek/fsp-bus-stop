@@ -112,30 +112,50 @@ meat = Item('Beef', 70000)
 pepsi = Item('Pepsi', 10000)
 red_bull = Item('Red Bull', 25000)
 
-cart = Cart()
-cart.add_item(milk)
-cart.add_item(meat)
-cart.add_item(red_bull)
-cart.add_item(pepsi)
-cart.show_items()
-cart.remove_item(pepsi)
-cart.show_items()
-cart.total_price()
+# cart = Cart()
+# cart.add_item(milk)
+# cart.add_item(meat)
+# cart.add_item(red_bull)
+# cart.add_item(pepsi)
+# cart.show_items()
+# cart.remove_item(pepsi)
+# cart.show_items()
+# cart.total_price()
 
 
+
+import math
 
 class Parallellogram:
-    def __init__(self, a, b):
+    def __init__(self, a, b, angle):
         self.a = a
         self.b = b
-    
+        self.angle = angle
+
+    def area(self):
+        return self.a * self.b * math.sin(math.radians(self.angle))
+
 class Rectangle(Parallellogram):
     def __init__(self, a, b):
         Parallellogram.__init__(self, a, b)
 
+    def area(self):
+        return self.a * self.b
+
 class Rhombus(Parallellogram):
+    def __init__(self, a, angle):
+        self.a = a
+        self.angle = angle
+
+    def area(self):
+        return self.a ** 2 * math.sin(math.radians(self.angle))
+
+class Square(Rhombus):
     def __init__(self, a):
         self.a = a
 
-class Square(Rhombus):
-    pass
+    def area(self):
+        return self.a ** 2
+
+p1 = Parallellogram(10, 10, 90)
+print(p1.area())
