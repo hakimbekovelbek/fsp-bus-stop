@@ -62,11 +62,11 @@ class TriangleChacker:
         for i in angles:
             if i <0:
                 return 'С отрицательными числами ничего не выйдет'
-        if angle1 + angle2 < angle3:
+        if angle1 + angle2 <= angle3:
             return 'Жаль, но из этого треугольник не сделать'
-        if angle2 + angle3<angle1:
+        if angle2 + angle3<=angle1:
             return 'Жаль, но из этого треугольник не сделать'
-        if angle1 +angle3 < angle2:
+        if angle1 +angle3 <= angle2:
             return 'Жаль, но из этого треугольник не сделать'
         return 'Ура, можно построить треугольник'
 check = TriangleChacker()    
