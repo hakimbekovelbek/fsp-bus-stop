@@ -1,6 +1,5 @@
-def sum( *numbs):
-    for i in range(numbs):
-        i += numbs
-    return i
+i = 0
+def sum( a, b,  *numbs):
+    print(a + b + numbs)
 
-sum(1, 2 )
+sum(1, 2)
