@@ -6,49 +6,45 @@ class Russia (Country):
     def __init__(self, population ) :
         Country.__init__(self, population)
 
-    def setPopulation(self):
+
+    @property
+    def population(self):
         return self._population
 
-    
-    def getPopulation(self, set_population):
-        if set_population <= 0 or isinstance(set_population, str):
-            print('ошибка')
-        else:
-            self._population = set_population
+    @population.setter
+    def population(self, set_population):
+        self._population = set_population
 
     
 class Canada(Country):
     def __init__(self, population ) :
         Country.__init__(self, population)
 
-    def setPopulation(self):
+
+    @property
+    def population(self):
         return self._population
 
-    
-    def getPopulation(self, set_population):
-        if set_population <= 0 or isinstance(set_population, str):
-            print('ошибка')
-        else:
-            self._population = set_population
+    @population.setter
+    def population(self, set_population):
+        self._population = set_population
 
-class Germany(Country):
+class Germany:
     def __init__(self, population ) :
         Country.__init__(self, population)
 
-    def setPopulation(self):
+
+    @property
+    def population(self):
         return self._population
 
-    
-    def getPopulation(self, set_population):
-        if set_population <= 0 or isinstance(set_population, str):
-            print('ошибка')
-        else:
-            self._population = set_population
-
+    @population.setter
+    def population(self, set_population):
+        self._population = set_population
 
 german = Germany(83_240_000)
-russia= Russia(144_100_000)
-canada = Canada(38_010_000)
+russian = Russia(144_100_000)
+canadian = Canada(38_010_000)
 print(german.population)
-print(russia.population)
-print(canada.population)
+print(russian.population)
+print(canadian.population)
