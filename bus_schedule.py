@@ -37,11 +37,6 @@ def get_time():
                 print (f'{"100"},destination "Chorsu",{overall}')
                 time = gettingtime-((gettingtime //10)*10)
                 print (f'{"100"},destination "Drujba",{time}')
-            elif gettingtime <60:
-                a= 25 -(gettingtime - (gettingtime//10)*10)
-                print (f'{"100"},destination "Chorsu",{a}')
-                time = gettingtime-((gettingtime //10)*10)
-                print (f'{"100"},destination "Medgorodok",{time}')
             else:
                 print("Blyat")
         else:
@@ -54,11 +49,6 @@ def get_time():
                 print (f'{"100"},destination "Chorsu",{overall}')
                 time = 15-((gettingtime //10)*10)
                 print (f'{"100"},destination "Drujba",{time}')
-            elif gettingtime <60:
-                a= 20 -(gettingtime - (gettingtime//10)*10)
-                print (f'{"100"},destination "Chorsu",{a}')
-                time = 15-((gettingtime //10)*10)
-                print (f'{"100"},destination "Medgorodok",{time}')
             else:
                 print("Blyat")
         else:
@@ -69,15 +59,6 @@ def get_time():
             if gettingtime > 60:
                 overall= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{overall}')
-                time = gettingtime-((gettingtime //10)*10)
-                print (f'{"104"},destination "Medgorodok",{time}')
-                new_line= 25 -(gettingtime-((gettingtime //10)*10))
-                print (f'{100},destination "Chorsu",{new_line}')
-                newline=gettingtime-((gettingtime //10)*10)
-                print(f'{100},destination "Drujba",{newline}')
-            elif gettingtime <60:
-                a= 23-(gettingtime - (gettingtime//10)*10)
-                print (f'{"104"},destination "Chorsu",{a}')
                 time = gettingtime-((gettingtime //10)*10)
                 print (f'{"104"},destination "Medgorodok",{time}')
                 new_line= 25 -(gettingtime-((gettingtime //10)*10))
@@ -101,15 +82,6 @@ def get_time():
                 print (f'{100},destination "Chorsu",{new_line}')
                 newline=15-(gettingtime-((gettingtime //10)*10))
                 print(f'{100},destination "Drujba",{newline}')
-            elif gettingtime <60:
-                a= 18-(gettingtime - (gettingtime//10)*10)
-                print (f'{"104"},destination "Chorsu",{a}')
-                time = 15 -(gettingtime-((gettingtime //10)*10))
-                print (f'{"104"},destination "Medgorodok",{time}')
-                new_line= 20 -(gettingtime-((gettingtime //10)*10))
-                print (f'{100},destination "Chorsu",{new_line}')
-                newline=15-(gettingtime-((gettingtime //10)*10))
-                print(f'{100},destination "Drujba",{newline}')
             else:
                 print("Blyat")
         else:
@@ -122,11 +94,6 @@ def get_time():
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = 15-(gettingtime-((gettingtime //10)*10))
                 print (f'{"104"},destination "Medgorodok",{time}')
-            elif gettingtime <60:
-                a= 18-(gettingtime - (gettingtime//10)*10)
-                print (f'{"104"},destination "Chorsu",{a}')
-                time = 15 -(gettingtime-((gettingtime //10)*10))
-                print (f'{"104"},destination "Medgorodok",{time}')
             else:
                 print("Blyat")
         else:
@@ -137,11 +104,6 @@ def get_time():
             if gettingtime > 60:
                 overall= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Medgorodok",{overall}')
-                time = gettingtime-((gettingtime //10)*10)
-                print (f'{"104"},destination "Chorsu",{time}')
-            elif gettingtime <60:
-                a= 23-(gettingtime - (gettingtime//10)*10)
-                print (f'{"BusNum"},destination "Medgorodok",{a}')
                 time = gettingtime-((gettingtime //10)*10)
                 print (f'{"104"},destination "Chorsu",{time}')
             else:
