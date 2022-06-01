@@ -4,14 +4,18 @@ import datetime
 import datetime
 import datetime
 from time import strftime
-timecodes={
-    "BusNum":104,
-    'Chorsu':5,
-    'Tinchlik':10,
-    'Beruniy':10,
-    'Medgorodok':8
-}
-# ? schedule in plan [baza]-{Chorsu}<--5min-->{Tinchlik}<--10min-->{Beruniy}<--8min-->{Medgorodok}-[baza]
+
+
+# !Plan
+# ?            [baza]->{Drujba}--
+# ?                            -- 5 min
+# ?                            --
+# ?                            -{samarqand darvoza} -
+# ?                                                --
+# ?                                                -- 15 min
+# ?                                                --
+# ?                                                --
+# ? schedule in plan [baza]-{Chorsu}<-->5min<-->{Tinchlik}<--10min-->{Beruniy}<--8min-->{Medgorodok}-[baza]
 
 a = datetime.datetime.now()
 x =  int(a.strftime("%H"))
@@ -26,18 +30,61 @@ gettingtime=int((hours * 60) + minutes)
 
 def get_time():
     name = input("Enter your station:")
-    if name  == "Chorsu":
+    if name  == "Drujba":
+        if x > 1:
+            if gettingtime > 60:
+                overall= 25-(gettingtime - (gettingtime//10)*10)
+                print (f'{"100"},destination "Chorsu",{overall}')
+                time = gettingtime-((gettingtime //10)*10)
+                print (f'{"100"},destination "Drujba",{time}')
+            elif gettingtime <60:
+                a= 25 -(gettingtime - (gettingtime//10)*10)
+                print (f'{"100"},destination "Chorsu",{a}')
+                time = gettingtime-((gettingtime //10)*10)
+                print (f'{"100"},destination "Medgorodok",{time}')
+            else:
+                print("Blyat")
+        else:
+            print("Buses are not available now!")
+
+    if name  == "Samarqand Darvoza":
+        if x > 1:
+            if gettingtime > 60:
+                overall= 20-(gettingtime - (gettingtime//10)*10)
+                print (f'{"100"},destination "Chorsu",{overall}')
+                time = 15-((gettingtime //10)*10)
+                print (f'{"100"},destination "Drujba",{time}')
+            elif gettingtime <60:
+                a= 20 -(gettingtime - (gettingtime//10)*10)
+                print (f'{"100"},destination "Chorsu",{a}')
+                time = 15-((gettingtime //10)*10)
+                print (f'{"100"},destination "Medgorodok",{time}')
+            else:
+                print("Blyat")
+        else:
+            print("Buses are not available now!")
+
+    elif name  == "Chorsu":
         if x > 1:
             if gettingtime > 60:
                 overall= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = gettingtime-((gettingtime //10)*10)
                 print (f'{"104"},destination "Medgorodok",{time}')
+                new_line= 25 -(gettingtime-((gettingtime //10)*10))
+                print (f'{100},destination "Chorsu",{new_line}')
+                newline=gettingtime-((gettingtime //10)*10)
+                print(f'{100},destination "Drujba",{newline}')
             elif gettingtime <60:
                 a= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{a}')
                 time = gettingtime-((gettingtime //10)*10)
                 print (f'{"104"},destination "Medgorodok",{time}')
+                new_line= 25 -(gettingtime-((gettingtime //10)*10))
+                print (f'{100},destination "Chorsu",{new_line}')
+                newline=gettingtime-((gettingtime //10)*10)
+                print(f'{100},destination "Drujba",{newline}')
+
             else:
                 print("Blyat")
         else:
@@ -50,11 +97,19 @@ def get_time():
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = 15-(gettingtime-((gettingtime //10)*10))
                 print (f'{"104"},destination "Medgorodok",{time}')
+                new_line= 20 -(gettingtime-((gettingtime //10)*10))
+                print (f'{100},destination "Chorsu",{new_line}')
+                newline=15-(gettingtime-((gettingtime //10)*10))
+                print(f'{100},destination "Drujba",{newline}')
             elif gettingtime <60:
                 a= 18-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{a}')
                 time = 15 -(gettingtime-((gettingtime //10)*10))
                 print (f'{"104"},destination "Medgorodok",{time}')
+                new_line= 20 -(gettingtime-((gettingtime //10)*10))
+                print (f'{100},destination "Chorsu",{new_line}')
+                newline=15-(gettingtime-((gettingtime //10)*10))
+                print(f'{100},destination "Drujba",{newline}')
             else:
                 print("Blyat")
         else:
