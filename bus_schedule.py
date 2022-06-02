@@ -30,12 +30,13 @@ gettingtime=int((hours * 60) + minutes)
 
 def get_time():
     name = input("Enter your station:")
+    print (f'Now is {hours} : {minutes} ')
     if name  == "Drujba":
         if x > 1:
             overall= 25-(gettingtime - (gettingtime//10)*10)
             print (f'{"100"},destination "Chorsu",{overall}')
             time = gettingtime-((gettingtime //10)*10)
-            print (f'{"100"},destination "Drujba",{time}')
+            print (f'{"100"},destination "Drujba",{time}')   
         else:
             print("Buses are not available now!")
 
