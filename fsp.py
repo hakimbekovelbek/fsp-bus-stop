@@ -1,38 +1,37 @@
 import datetime
-
 class Station:
-    start_time = 18000
-    end_time  = 3600
-    koef = 10
-    def get_time(self , time , start_time , end_time , koef , spend_time):
+    start_working_time = 18000
+    end_woking_time  = 3600
+    interval = 10
+    def get_time(self , time , start_working_time , end_working_time , interval , spend_time):
         hour = time.split(':')
-        timess = (int(hour[0]) * 3600 + int(hour[1]))
-        if timess < start_time and timess > 3600:
-            return f"Sorry but we don't work"
+        now = (int(hour[0]) * 3600 + int(hour[1]))
+        if now < start_working_time and now > end_working_time:
+            return f"Sorry but we don't work at this time"
         else:
-            times = timess % koef 
-            all_time = koef - times  + spend_time
+            time_arrive = now_time % interval 
+            all_time = interval - time_arrive  + spend_time
             return all_time
 class A(Station):
-    number = 1
+    number_station = 1
     spend_time = 3
 class B(Station):
-    number = 2
+    number_station = 2
     spend_time = 4
 class D(Station):
-    number = 3
+    number_station = 3
     spend_time = 5
 class E(Station):
-    number = 1
-    koef = 5
+    number_station = 1
+    interval = 5
     spend_time = 5
 class F(Station):
-    number = 2
-    koef = 5
+    number_station = 2
+    interval = 5
     spend_time = 2
 class G(Station):
-    number = 3
-    koef = 5
+    number_station = 3
+    interval = 5
     spend_time = 4
 class TimeTable():
     def __init__(self , station1 , station2 , station3 , time):
@@ -42,10 +41,10 @@ class TimeTable():
         self.time = time
     def get_table(self):
         time = self.time
-        start_working = self.station1.start_time 
-        end_working = self.station1.end_time
-        bus_arrive_for = self.station1.koef
-        if self.station1.number== 1 or self.station1.number == 3:
+        start_working = self.station1.start_working_time 
+        end_working = self.station1.end_working_time
+        bus_arrive_for = self.station1.interval
+        if self.station1._station== 1 or self.station1.number_station == 3:
             spend_time = self.station1.spend_time
             spend_time2 = self.station2.spend_time + self.station3.spend_time
         else:
