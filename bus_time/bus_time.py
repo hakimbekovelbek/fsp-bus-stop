@@ -35,7 +35,7 @@ def bus_stop():
 
         if z > 1:
             if gt > 60:
-                o = 14 - ((gt - (gt // 10) * 10 ))
+                o = 28 - ((gt - (gt // 10) * 10 ))
                 print(f'{"104"}, destination "tinchli" {o}')
                 t = (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "beruniu" {t}')
@@ -46,26 +46,26 @@ def bus_stop():
         else:
             print('fuck off')
 
-    if location == 'tinchli':
+    elif location == 'tinchli':
 
         if z > 1:
             if gt > 60:
-                o = 14 - (gt - ((gt // 10) * 10))
+                o = 23 - (gt - ((gt // 10) * 10))
                 print(f'{"104"} destination "tinchli" {o}')
-                t = (gt - ((gt // 10) * 10))
+                t = 18 - (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "beruniy" {t}')
             else:
                 print('blin')
         else:
             print('fuck off')
 
-    if location == 'chorsu':
+    elif location == 'chorsu':
 
         if z > 1:
             if gt > 60:
-                o = 28 - (gt - ((gt // 10) * 10))
+                o = 23 - (gt - ((gt // 10) * 10))
                 print(f'{"104"} destination "chorsu" {o}')
-                t = 14 -(gt - ((gt // 10) * 10))
+                t = (gt - ((gt // 10) * 10))
                 print(f'{"104"} destination "abdulla_qodiriy" {t}')
                 nl = 28 - (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "chorsu" {nl}')
@@ -76,7 +76,7 @@ def bus_stop():
         else:
             print('fuck off')
 
-    if location == 'beruniy':
+    elif location == 'beruniy':
         if z > 1:
             if gt > 60:
                 o = 28 - (gt - (gt // 10) * 10)
@@ -87,7 +87,7 @@ def bus_stop():
                 print('blin')
         else:
             print('fuck off')
-    if location == 'abdulla_qodiriy':
+    elif location == 'abdulla_qodiriy':
         if z > 1:
             if gt > 60:
                 o = 28 - (gt - (gt // 10) * 10)
