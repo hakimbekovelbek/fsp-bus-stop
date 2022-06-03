@@ -1,7 +1,7 @@
 import datetime
 class Station:
     start_working_time = 18000
-    end_woking_time  = 3600
+    end_working_time  = 3600
     interval = 10
     def get_time(self , time , start_working_time , end_working_time , interval , spend_time):
         hour = time.split(':')
@@ -9,8 +9,10 @@ class Station:
         if now < start_working_time and now > end_working_time:
             return f"Sorry but we don't work at this time"
         else:
-            time_arrive = now_time % interval 
+            time_arrive = now % interval 
             all_time = interval - time_arrive  + spend_time
+            if all_time >=interval:
+                all_time -= interval
             return all_time
 class A(Station):
     number_station = 1
@@ -44,7 +46,7 @@ class TimeTable():
         start_working = self.station1.start_working_time 
         end_working = self.station1.end_working_time
         bus_arrive_for = self.station1.interval
-        if self.station1._station== 1 or self.station1.number_station == 3:
+        if self.station1.number_station== 1 or self.station1.number_station == 3:
             spend_time = self.station1.spend_time
             spend_time2 = self.station2.spend_time + self.station3.spend_time
         else:
