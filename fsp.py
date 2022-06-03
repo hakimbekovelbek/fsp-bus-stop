@@ -5,7 +5,7 @@ class Station:
     interval = 10
     def get_time(self , time , start_working_time , end_working_time , interval , spend_time):
         hour = time.split(':')
-        now = (int(hour[0]) * 3600 + int(hour[1]))
+        now = (int(hour[0]) * 60 + int(hour[1]))
         if now < start_working_time and now > end_working_time:
             return f"Sorry but we don't work at this time"
         else:
