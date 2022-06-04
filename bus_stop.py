@@ -116,16 +116,8 @@ st104 = Route104(10, 9, 8, 12)
 st124 = Route124(7, 10, 10, 15)
 st487 = Route487(5, 9, 7, 13)
 print(f'Time: {hours} : {minutes}')
-stop_bus = input('Enter your current station: ')
-print(st104.show_time())
-print(st124.show_time())
-print(st487.show_time())
-# def schedule():
-#     return f'''
-#     {st104.show_time()}
-#     {st124.show_time()}
-#     {st487.show_time()}
-#     '''
-
-
-# print(schedule())
+while True:
+    stop_bus = input('Enter your current station: ')
+    print(st104.show_time())
+    print(st124.show_time())
+    print(st487.show_time())
