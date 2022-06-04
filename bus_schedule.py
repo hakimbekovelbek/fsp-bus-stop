@@ -41,7 +41,7 @@ def get_time():
             else:
                 print("Buses are not available now!")
 
-        if name  == "Samarqand Darvoza":
+        elif name  == "Samarqand Darvoza":
             if x > 1:
                 overall= 20-(gettingtime - (gettingtime//10)*10)
                 print (f'{"100"},destination "Chorsu",{overall}')
