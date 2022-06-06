@@ -94,7 +94,7 @@ def bus_stop():
                 o = 28 - (gt - (gt // 10) * 10)
                 print(f'{"104"} destination "qafur_qulom" {o}')
                 t = 14 - (gt - (gt // 10) * 10)
-                print(f'{"104"} destination "chorsu" {t}')
+                print(f'destination "chorsu" {t}')
 
             else:
                 print('blin')
