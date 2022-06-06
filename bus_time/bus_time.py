@@ -4,9 +4,10 @@
 # ?   beruniy -- A
 # ?               tinchli --B
 # ?                           chorsu --C
-# ?                                      abdulla_qodiriy --D
-
-
+# ?                                      qafur_qulom --D
+# ?                                                     alisher_anvoiy --e
+# ?                                                                       ozbekiston --f  
+# ?                                                                                     kosmanavtlar --j
 
 
 
@@ -66,7 +67,7 @@ def bus_stop():
                 o = 23 - (gt - ((gt // 10) * 10))
                 print(f'{"104"} destination "chorsu" {o}')
                 t = (gt - ((gt // 10) * 10))
-                print(f'{"104"} destination "abdulla_qodiriy" {t}')
+                print(f'{"104"} destination "qafur_qulom" {t}')
                 nl = 28 - (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "chorsu" {nl}')
                 nl = (gt - ((gt // 10) * 10))
@@ -82,16 +83,16 @@ def bus_stop():
                 o = 28 - (gt - (gt // 10) * 10)
                 print(f'{"104"} destination  "chorsu" {o}')
                 t = 14 - (gt - ((gt // 10) * 10))
-                print(f'{"104"} destination "abdulla_qodiriy" {t}')
+                print(f'{"104"} destination "qafur_qulom" {t}')
             else:
                 print('blin')
         else:
             print('fuck off')
-    elif location == 'abdulla_qodiriy':
+    elif location == 'qafur_qulom':
         if z > 1:
             if gt > 60:
                 o = 28 - (gt - (gt // 10) * 10)
-                print(f'{"104"} destination "abdulla_qodiriy" {o}')
+                print(f'{"104"} destination "qafur_qulom" {o}')
                 t = 14 - (gt - (gt // 10) * 10)
                 print(f'{"104"} destination "chorsu" {t}')
 
@@ -99,5 +100,17 @@ def bus_stop():
                 print('blin')
         else:
             print('fuck off')
+    elif location == 'alisher_anvoiy':
+        if z > 1:
+            if gt > 60:
+                o = 28 - (gt - (gt // 10) * 10)
+                print(f'{"104"} destination "alisher_anvoiy" {o}')
+                t = 14 - (gt - (gt // 10) * 10)
+                print(f'{"434"} destination "qafur_qulom" {t}')
+            else:
+                print('blin')
+        else:
+            print('fuck off')
+
 bus_stop()
 
