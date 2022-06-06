@@ -11,7 +11,7 @@ class Station:
         else:
             time_arrive = now % interval 
             all_time = interval - time_arrive  + spend_time
-            if all_time >=interval:
+            while all_time >=interval:
                 all_time -= interval
             return all_time
 class A(Station):
