@@ -6,8 +6,6 @@
 # ?                           chorsu --C
 # ?                                      qafur_qulom --D
 # ?                                                     alisher_anvoiy --e
-# ?                                                                       ozbekiston --f  
-# ?                                                                                     kosmanavtlar --j
 
 
 
