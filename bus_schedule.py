@@ -18,9 +18,6 @@ from time import strftime
 
 # ! Working time- 5:00 ; 00:00
 
-a = datetime.datetime.now()
-x =  int(a.strftime("%H"))
-
 hrs= datetime.datetime.now()
 hours=int(hrs.strftime("%H"))
 
@@ -34,7 +31,7 @@ def get_time():
         name = input("Enter your station:")
         print (f'Now is {hours} : {minutes} ')
         if name  == "Drujba":
-            if 300<gettingtime<1440:
+            if 300<gettingtime<0:
                 overall= 25-(gettingtime - (gettingtime//10)*10)
                 print (f'{"100"},destination "Chorsu",{overall}')
                 time = gettingtime-((gettingtime //10)*10)
@@ -43,7 +40,7 @@ def get_time():
                 print("Buses are not available now!")
 
         elif name  == "Samarqand Darvoza":
-            if 300<gettingtime<1440:
+            if 300<gettingtime<0:
                 overall= 20-(gettingtime - (gettingtime//10)*10)
                 print (f'{"100"},destination "Chorsu",{overall}')
                 time = 15-((gettingtime //10)*10)
@@ -52,7 +49,7 @@ def get_time():
                 print("Buses are not available now!")
 
         elif name  == "Chorsu":
-            if 300<gettingtime<1440:
+            if 300<gettingtime<0:
                 overall= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = gettingtime-((gettingtime //10)*10)
@@ -65,7 +62,7 @@ def get_time():
                 print("Buses are not available now!")
 
         elif name  == "Tinchlik":
-            if 300<gettingtime<1440:
+            if 300<gettingtime<0:
                 overall= 18-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = 15-(gettingtime-((gettingtime //10)*10))
@@ -78,7 +75,7 @@ def get_time():
                 print("Buses are not available now!")
 
         elif name  == "Beruniy":
-            if 300<gettingtime<1440:            
+            if 300<gettingtime<0:            
                 overall= 18-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Chorsu",{overall}')
                 time = 15-(gettingtime-((gettingtime //10)*10))
@@ -88,7 +85,7 @@ def get_time():
 
         elif name  == "Medgorodok":
 
-            if 300<gettingtime<1440:
+            if 300<gettingtime<0:
                 overall= 23-(gettingtime - (gettingtime//10)*10)
                 print (f'{"104"},destination "Medgorodok",{overall}')
                 time = gettingtime-((gettingtime //10)*10)
