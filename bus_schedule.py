@@ -32,53 +32,53 @@ def get_time():
         print (f'Now is {hours} : {minutes} ')
         if name  == "Drujba":
             if 300<gettingtime<0:
-                overall= 25-(gettingtime - (gettingtime//10)*10)
+                overall= 25-(gettingtime %10)
                 print (f'{"100"},destination "Chorsu",{overall}')
-                time = gettingtime-((gettingtime //10)*10)
+                time = gettingtime-(gettingtime %10)
                 print (f'{"100"},destination "Drujba",{time}')   
             else:
                 print("Buses are not available now!")
 
         elif name  == "Samarqand Darvoza":
             if 300<gettingtime<0:
-                overall= 20-(gettingtime - (gettingtime//10)*10)
+                overall= 20-(gettingtime %10)
                 print (f'{"100"},destination "Chorsu",{overall}')
-                time = 15-((gettingtime //10)*10)
+                time = 15-(gettingtime %10)
                 print (f'{"100"},destination "Drujba",{time}')
             else:
                 print("Buses are not available now!")
 
         elif name  == "Chorsu":
             if 300<gettingtime<0:
-                overall= 23-(gettingtime - (gettingtime//10)*10)
+                overall= 23-(gettingtime %10)
                 print (f'{"104"},destination "Chorsu",{overall}')
-                time = gettingtime-((gettingtime //10)*10)
+                time = gettingtime-(gettingtime %10)
                 print (f'{"104"},destination "Medgorodok",{time}')
                 new_line= 25 -(gettingtime-((gettingtime //10)*10))
                 print (f'{"100"},destination "Chorsu",{new_line}')
-                newline=gettingtime-((gettingtime //10)*10)
+                newline=gettingtime-(gettingtime%10)
                 print(f'{"100"},destination "Drujba",{newline}')
             else:
                 print("Buses are not available now!")
 
         elif name  == "Tinchlik":
             if 300<gettingtime<0:
-                overall= 18-(gettingtime - (gettingtime//10)*10)
+                overall= 18-(gettingtime %10)
                 print (f'{"104"},destination "Chorsu",{overall}')
-                time = 15-(gettingtime-((gettingtime //10)*10))
+                time = 15-(gettingtime%10)
                 print (f'{"104"},destination "Medgorodok",{time}')
-                new_line= 20 -(gettingtime-((gettingtime //10)*10))
+                new_line= 20 -(gettingtime % 10)
                 print (f'{100},destination "Chorsu",{new_line}')
-                newline=15-(gettingtime-((gettingtime //10)*10))
+                newline=15-(gettingtime%10)
                 print(f'{100},destination "Drujba",{newline}')
             else:
                 print("Buses are not available now!")
 
         elif name  == "Beruniy":
             if 300<gettingtime<0:            
-                overall= 18-(gettingtime - (gettingtime//10)*10)
+                overall= 18-(gettingtime %10)
                 print (f'{"104"},destination "Chorsu",{overall}')
-                time = 15-(gettingtime-((gettingtime //10)*10))
+                time = 15-(gettingtime%10)
                 print (f'{"104"},destination "Medgorodok",{time}')
             else:
                 print("Buses are not available now!")
@@ -86,9 +86,9 @@ def get_time():
         elif name  == "Medgorodok":
 
             if 300<gettingtime<0:
-                overall= 23-(gettingtime - (gettingtime//10)*10)
+                overall= 23-(gettingtime % 10)
                 print (f'{"104"},destination "Medgorodok",{overall}')
-                time = gettingtime-((gettingtime //10)*10)
+                time = gettingtime-(gettingtime %10)
                 print(f'{"104"},destination "Chorsu",{time}')
             else:
                 print("Buses are not available now!")
