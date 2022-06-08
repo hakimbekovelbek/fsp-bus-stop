@@ -27,3 +27,8 @@ class Germany(Russia):
 class Canada(Russia):
     def __init__(self, population):
         self.population = population
+
+
+
+
+        
