@@ -51,7 +51,7 @@ def bus_stop():
             if gt > 60:
                 o = 23 - (gt - ((gt // 10) * 10))
                 print(f'{"104"} destination "tinchli" {o}')
-                t = 18 - (gt - ((gt // 10) * 10))
+                t = (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "beruniy" {t}')
             else:
                 print('blin')
