@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Анкета посетителя ресторана</h2>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                Имя <input type="name" name="name">
+            </div>
+            <div>
+                Телефон <input type="number" name="tellnumber">
+            </div>
+            <div>
+                Email <input type="email" name="email">
+            </div>
+            <div>
+                Дата посещения <input type="date" name="date">
+            </div>
+        </fieldset>
+
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <div>
+            Возраст <input type="возраст" name="возраст">
+        </div>
+        <div>
+            Любимая кухня
+            <select name="favKitchen">
+                <option value="1001">Русская</option>
+                <option value="2001">Корейская</option>
+                <option value="3001">Французская</option>
+                <option value="4001">Японская</option>
+                <option value="5001">Итальянская</option>
+            </select>
+        </div>
+        <div>
+            Какие блюда Вы хотели бы
+            увидеть в меню? <input type="text" name="text">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Оценка нашего заведение</legend>
+        <div>
+            Почему Вы выбрали наше заведение?
+            </div>
+            <div>
+                <label>Недалеко от дома/работы <input type="radio" value="1" name="nearH"></label>
+            </div>
+            <div>
+                <label>Увидел рекламу <input type="radio" value="2" name="ads"></label>
+            </div>
+            <div>
+                <label>Посовтовали <input type="radio" value="3" name="prefer"></label>
+            </div>
+            <div>
+                <label>Оптимальное соотношение цены и качества <input type="radio" value="4" name="good"></label>
+            </div>
+            <div>
+                Вы будете рекомендовать наше заведение своим знакомым?
+            </div>
+            <div>
+                <label>Да <input type="radio" value="5" name="yes"></label>
+            </div>
+            <div>
+                <label>Нет <input type="radio" value="6" name="no"></label>
+            </div>
+    </fieldset>
+
+    <div>
+        <input type="отправить" value="Отправить">
+    </div>
+</form>
+</body>
+</html>
