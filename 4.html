@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Анкета посетителя ресторана</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>Имя <input type="text" name = "name"></div>
+            <div>Телефон <input type="text"   name = "tel" maxlength = "12"required></div>
+            <div>Email <input type="text" name="email"></div>
+            <div>Дата посещения <input type="date" name="date"></div>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <div>Возраст <input type="number" min="1" max="100" step="1"></div>
+            <div>Любимая кухня <select>
+                <option value=122"">Русская</option>
+                <option value="211">Франсузкая</option>
+                <option value="200">Итальянская</option>
+            </select></div>
+            <div>Какие блюда Вы хотели бы видеть<textarea name="menu"></textarea></div>
+        </fieldset>
+        <fieldset>
+            <legend>Оценка Нашего Заведения</legend>
+            <div><p>Почему Вы выбрали наше Заведение?</p>
+           <input type="radio" id = "factor" name="reason" value="001"> Недалеко от дома/работы
+            <p></p><input type="radio" id="factor" name="reason" value="002"> Увидел рекламу
+            <p></p> <input type="radio" id="factor" name="reason" value="003"> Посоветовали
+            <p></p> <input type="radio" id="factor" name="reason" value="004"> Оптимальное отношение цены и качества
+        </div>
+        <div>
+            <p>Вы будете рекомендовать наше заведение своим знакомым</p>
+            <input type="radio" id="answer"  name="answer" value="true"> Да
+            <p></p> <input type="radio" id="answer" name="answer" value="false"> Нет
+        </div>
+            
+        </fieldset>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+</body>
+</html>
