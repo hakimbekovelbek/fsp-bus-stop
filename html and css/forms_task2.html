@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form action="">
+
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                имя <input type="text" name="nme">
+            </div>
+            <div>
+                телефон <input type="tel" name="tel">
+            </div>
+            <div>
+                email <input type="email" name="" id="">
+            </div>
+            <div>
+                дата посещения <input type="date" name="date">
+            </div>
+
+        </fieldset>
+
+    
+    
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                возраст <input type="age" name="age" min="1" max="100" step="1">
+            </div>
+            <div>
+                любимая кухня <select name="cuisine">
+                    
+                    <option value="russian">русская</option>
+                    <option value="uzb">Узбекская</option>
+                    <option value="other">Другая</option>
+                </select>
+            </div>
+            <div>
+                какие блюда вы бы хотели увидеть в меню <textarea name="menu" id="" cols="5" rows="1"></textarea>
+            </div>
+
+        </fieldset>
+
+    
+
+    
+        <fieldset>
+            <legend>Оценка Нашего Заведения</legend>
+            <div>
+                почему вы выбрали наше заведение 
+                <div>
+                    <label for=""> <input type="radio" value="advice" name="Factor"> недалеко от дома/работы </label>
+                </div>
+                <div>
+                    <label for=""> <input type="radio" value="ad" name="Factor"> Увидел рекламу </label>
+                </div>
+                <div>
+                    <label for=""> <input type="radio" value="advice" name="Factor"> посоветовали </label>
+                </div>
+                <div>
+                    <label for=""> <input type="radio" value="advice" name="Factor"> оптимальное соотношение цены и качество
+                </div>
+                </label>
+            </div>
+
+            <div>
+                вы будете рекомендовать наше заведение?
+                <label for=""> <input type="radio" value="advice" name="recomend"> да </label>
+                <label for=""> <input type="radio" value="ad" name="recomend"> нет</label>
+            </div>
+       
+
+        </fieldset>
+        <button>отправить</button>
+    </form>
+    
+</body>
+
+</html>
