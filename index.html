@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
 </head>
-<body>
-    <h2>Форма правления</h2>
-    <ul>
-        <li>Монархия 
-            <ul> <li>Абсолютная (неограниченная)</li>
-                <li>Ограниченная
-                    <ul>
-                        <li>Сословно представительная</li> <li>Конституционная 
-                            <ul>
-                                <li>Дуалистическая</li> <li>Парламентарная</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>Республика 
-            <ul>
-                <li>Парламентская</li>
-                <li>Президентская</li>
-                <li>Смешанная</li>
-            </ul>
-        </li>
-    </ul>
 
+<body>
+    <form action="#">
+        <h1>Анкета посетителя ресторана</h1>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="mobile_number">Телефон</label>
+                <input type="number" name="name" id="mobile_number">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="date">Дата посещения</label>
+                <input type="date" name="date" id="date">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <div>
+                <label for="age">Возраст</label>
+                <input type="number" name="age" id="age" min="1" max="100" step="1">
+            </div>
+            <div>
+                <label for="favorite_cuisine">Любимая кухня</label>
+                <select name="favorite_cuisine" id="favorite_cuisine">
+                    <option value="rus">Русская</option>
+                </select>
+            </div>
+            <div>
+                <label for="menu">Какие блюда Вы хотели бы увидеть в меню? </label>
+                <textarea name="text" id="menu" cols="30" rows="3"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+            <div>
+                <label for="factor">Почему вы выбрали наше заведение?</label>
+                <div><label> Недалеко от дома/работы <input type="radio" value="1" name="factor" required></label></div>
+                <div><label>Увидел рекламу <input type="radio" value="2" name="factor" required></label></div>
+                <div><label>Посоветовали <input type="radio" value="3" name="factor" required></label></div>
+                <div><label>Оптимальное соотношение цены и качества <input type="radio" value="4" name="factor" required></label></div>
+            </div>
+            <div>
+                <label>Вы будете рекомендовать наше заведение своим знакомым?</label>
+                <div><label>Да <input type="radio" value="1" name="rec" required></label></div>
+                <div><label>Нет <input type="radio" value="2" name="rec" required></label></div>
+            </div>
+        </fieldset>
+        <input type="submit" value="отправить">
+    </form>
 </body>
+
 </html>
