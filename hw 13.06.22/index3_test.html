@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 30%;
+            border: 1px solid #000;
+        }
+
+        td {
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td rowspan="3">day</td>
+            <td colspan="3">seminar</td>
+        </tr>
+        <tr>
+            <td colspan="2">schedule</td>
+            <td rowspan="2">topic</td>
+        </tr>
+        <tr>
+            <td>begin</td>
+            <td>end</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8</td>
+            <td rowspan="2">5</td>
+            <td>intro</td>
+        </tr>
+        <tr>
+            <td>validity</td>
+        </tr>
+        <tr>
+            <td rowspan="6">Tuesday</td>
+            <td rowspan="2">8</td>
+            <td rowspan="2">11</td>
+            <td rowspan="3">XPath</td>
+        </tr>
+        <tr>
+            <td class="hidden">empty</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11</td>
+            <td rowspan="2">2</td>
+
+        </tr>
+        <tr>
+            <td rowspan="3">XSL Transform</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td class="hidden">empty</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8</td>
+            <td>12</td>
+            <td>XSL formatting</td>
+        </tr>
+    </table>
+</body>
+
+</html>
