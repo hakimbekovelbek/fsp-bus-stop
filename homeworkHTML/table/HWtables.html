@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        #withoutTagCol td {
+            min-width: 60px;
+            height: 20px;
+            text-align: center;
+        }
+        col {
+            width: 60px;
+
+        }
+        tr {
+            height: 20px;
+        }
+        .hidden {
+            opacity: 0;
+            border: 0;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        .redRow {
+            background-color: #fe0000;
+        }
+
+        .orangeRow {
+            background-color: #ffbb01;
+        }
+
+        .yellowRow {
+            background-color: #ffff00;
+        }
+
+        .greenRow {
+            background-color: #00b144;
+        }
+
+        .lightBlueRow {
+            background-color: #00b3f6;
+        }
+
+        .blueRow {
+            background-color: #0172c5;
+        }
+
+        .purpleRow {
+            background-color: #792ba5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="colouredTable" cellspacing="0">
+        <caption>Coloured table</caption>
+        <col><col><col><col><col><col><col>
+        <tr class="redRow">
+            <td rowspan="3">1</td>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+            <td rowspan="3"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="orangeRow">
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="yellowRow">
+            <td colspan="2">3</td>
+            <td></td>
+            <td></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr class="greenRow">
+            <td>4</td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr class="lightBlueRow">
+            <td>5</td>
+            <td colspan="2"></td>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="blueRow">
+            <td>6</td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr class="purpleRow">
+            <td rowspan="4">7</td>
+            <td rowspan="2" colspan="2"></td>
+            <td></td>
+            <td colspan="3"></td>
+
+        </tr>
+        <tr class="redRow">
+            <td rowspan="3">8</td>
+            <td rowspan="3" colspan="3"></td>
+            <!-- <td class="hidden" style="background-color: white;"></td> !!!!  -->
+        </tr>
+        <tr class="orangeRow">
+            <td>9</td>
+            <td></td>
+        </tr>
+        <tr class="yellowRow">
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr class="greenRow">
+            <td>11</td>
+            <td colspan="4"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr class="lightBlueRow">
+            <td colspan="3">12</td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr class="blueRow">
+            <td rowspan="5" colspan="3">13</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="purpleRow">
+            <td>14</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="redRow">
+            <td>15</td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr class="orangeRow">
+            <td rowspan="3">16</td>
+            <td rowspan="3"></td>
+            <!-- <td class="hidden" style="background-color: white;"></td> !!!!  -->
+
+        </tr>
+        <tr class="orangeRow">
+            <td colspan="2"></td>
+        </tr>
+
+        <tr class="yellowRow">
+            <td>17</td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr class="greenRow">
+            <td>18</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+
+    <table id="withoutTagCol" cellspacing="0">
+        <caption>Without "col"</caption>
+        <tr>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+            <td class="hidden"></td>
+        </tr>
+
+
+        <tr>
+            <td rowspan="2" colspan="2">r1c1</td>
+            <td>r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>
+            <td rowspan="2">r2c3</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>
+            <td colspan="2">r3c1</td>
+            <td colspan="2">r3c4</td>
+            <td>r3c6</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>
+            <td>r4c1</td>
+            <td colspan="2">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2">r4c5</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td rowspan="2" colspan="2">r5c5</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>
+            <td>r6c4</td>
+            <td class="hidden"></td>
+        </tr>
+
+    </table>
+    <table cellspacing="0">
+        <caption>With "col"</caption>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+
+        <tr>
+            <td rowspan="2" colspan="2">r1c1</td>
+            <td>r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">r2c3</td>
+        </tr>
+        <tr>
+            <td colspan="2">r3c1</td>
+            <td colspan="2">r3c4</td>
+            <td>r3c6</td>
+        </tr>
+        <tr>
+            <td>r4c1</td>
+            <td colspan="2">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2">r4c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td rowspan="2" colspan="2">r5c5</td>
+        </tr>
+        <tr>
+            <td>r6c4</td>
+        </tr>
+
+    </table>
+    <table id="seminarSchedule" cellspacing="2">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+            
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td>Introducing to XML</td>
+        </tr>
+        <tr>
+            <td>Validity:DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:00 a.m</td>
+            <td rowspan="2">2:00 p.m</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr> 
+            <td rowspan="2">XSL Tranformation</td>
+            <td class="hidden"></td>
+        </tr>
+        <tr>  
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td> 
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XSL Formating Objects</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
