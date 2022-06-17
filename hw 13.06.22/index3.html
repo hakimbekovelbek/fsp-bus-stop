@@ -6,52 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        th,
-        td {
-            height: 24px;
-            text-align: center;
-        }
-
-        div.half1 {
-            height: 43%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        div.half2 {
-            border-top: 1px solid black;
-            border-bottom: none;
-            border-left: none;
-            border-right: none;
-            height: 44%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
     <table border="1">
         <tr>
-            <td rowspan="3">Day</td>
-            <td colspan="3">Seminar</td>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
         </tr>
         <tr>
             <td colspan="2">Shedule</td>
-            <td colspan="2" rowspan="2">Topic</td>
+            <td rowspan="2">Topic</td>
         </tr>
         <tr>
             <td>Begin</td>
             <td>End</td>
         </tr>
         <tr>
-            <td rowspan="2">Monday</td>
+            <td rowspan="2"> Monday</td>
             <td rowspan="2">8:00 a.m.</td>
             <td rowspan="2">5:00 p.m.</td>
             <td>Introduction to XML</td>
@@ -60,21 +32,22 @@
             <td>Validity DTD and Relax NG</td>
         </tr>
         <tr>
-            <td rowspan="3">Tuesday</td>
+            <td rowspan="4">Tuesday</td>
             <td>8:00 a.m.</td>
-            <td>11:00 a.m.</td>
-            <td class="rowspan3" rowspan="3">
-                <div class="half1">XPATH</div>
-                <div class="half2">Transformaciones XSL</div>
-            </td>
+            <td>11:00 p.m.</td>
+            <td rowspan="2">XPath</td>
         </tr>
         <tr>
-            <td>11:00 a.m.</td>
-            <td>2:00 p.m.</td>
+            <td rowspan="2">11:00 a.m.</td>
+            <td rowspan="2">2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL Transformations</td>
         </tr>
         <tr>
             <td>2:00 p.m.</td>
             <td>5:00 p.m.</td>
+
         </tr>
         <tr>
             <td>Wednesday</td>
@@ -82,7 +55,9 @@
             <td>12:00 p.m.</td>
             <td>XSL Formating Objects</td>
         </tr>
+
     </table>
+
 </body>
 
 </html>
