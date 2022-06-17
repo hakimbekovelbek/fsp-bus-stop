@@ -11,12 +11,19 @@
             width: 60px;
             height: 20px;
             text-align: center;
+            border: 1px solid;
+        }
+
+        #hidden {
+            background-color: #fff;
+            border: #fff;
         }
     </style>
 </head>
 
 <body>
-    <table cellspacing="0" border="3">
+    <table cellspacing="0">
+        <caption>Coloured table</caption>
         <col>
         <col>
         <col>
@@ -68,6 +75,7 @@
         <tr bgcolor="#f70302">
             <td rowspan="3">8</td>
             <td rowspan="3" colspan="3"></td>
+            <td id="hidden"></td>
         </tr>
 
         <tr bgcolor="#fbbe01">
@@ -116,6 +124,8 @@
         <tr bgcolor="#febd00">
             <td rowspan="3">16</td>
             <td rowspan="3"></td>
+            <td id="hidden"></td>
+
         </tr>
 
         <tr bgcolor="#febd00">
@@ -132,6 +142,10 @@
             <td>18</td>
             <td colspan="6"></td>
         </tr>
+    </table>
+
+    <table>
+
     </table>
 </body>
 
