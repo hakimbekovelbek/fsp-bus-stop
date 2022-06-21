@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Birth Certificate</title>
     <style>
         html,
         body {
@@ -23,6 +23,7 @@
             background-color: rgb(237, 250, 162);
             height: 30px;
             width: 150px;
+
         }
 
         form {
@@ -35,204 +36,214 @@
     <form action="#">
         <h1>Birth Certificate</h1>
         <fieldset>
-            <table>
-                <legend>Citizen</legend>
+            <div class="citizen">
+                <table>
+                    <legend>Citizen</legend>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="surname">Surname: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="surname" id="surname">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="givenNames">Given Names: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="givenNames" id="givenNames">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="wasBornOn">Was born on: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="wasBornOn" id="wasBornOn">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="sex">Sex: </label>
+                            </td>
+                            <td>
+                                <div><label>F <input type="radio" value="1" name="sex" required></label></div>
+                            </td>
+                            <td>
+                                <div><label>M <input type="radio" value="2" name="sex" required></label></div>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="placeOfBirth">Place of birth: Republic </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="placeOfBirth" id="placeOfBirth">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="region">Region: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="region" id="region">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="city">City: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="city" id="city">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="birthRecord">Birth Record №: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="birthRecord" id="birthRecord">
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="father">
+                <table>
+                    <legend>Father</legend>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="surnameF">Surname: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="surnameF" id="surnameF">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="givenNamesF">Given Names: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="givenNamesF" id="givenNamesF">
+                            </td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="nationalityF">Nationality: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="nationalityF" id="nationalityF">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="dateofissueF">Date of issue: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="date" name="dateofissueF" id="dateofissueF">
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="mother">
+                <table>
+                    <legend>Mother</legend>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="surnameM">Surname: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="surnameM" id="surnameM">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="givenNamesM">Given Names: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="givenNamesM" id="givenNamesM">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="nationalityM">Nationality: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="text" name="nationalityM" id="nationalityM">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div>
+                            <td colspan="3">
+                                <label for="dateofissueM">Date of issue: </label>
+                            </td>
+                            <td colspan="4">
+                                <input type="date" name="dateofissueM" id="dateofissueM">
+                            </td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="registrar">
+                <legend>Registrar</legend>
                 <tr>
                     <div>
-                        <td colspan="3">
-                            <label for="surname">Surname: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="surname" id="surname">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="givenNames">Given Names: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="givenNames" id="givenNames">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="wasBornOn">Was born on: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="wasBornOn" id="wasBornOn">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="sex">Sex: </label>
+                        <td>
+                            <label for="registrar"></label>
                         </td>
                         <td>
-                            <div><label>F <input type="radio" value="1" name="sex" required></label></div>
-                        </td>
-                        <td>
-                            <div><label>M <input type="radio" value="2" name="sex" required></label></div>
+                            <input type="text" name="registrar" id="registrar">
                         </td>
                     </div>
                 </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="placeOfBirth">Place of birth: Republic </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="placeOfBirth" id="placeOfBirth">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="region">Region: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="region" id="region">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="city">City: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="city" id="city">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="birthRecord">Birth Record №: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="birthRecord" id="birthRecord">
-                        </td>
-                    </div>
-                </tr>
-            </table>
+            </div>
         </fieldset>
-
-        <fieldset>
-            <table>
-                <legend>Father</legend>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="surnameF">Surname: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="surnameF" id="surnameF">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="givenNamesF">Given Names: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="givenNamesF" id="givenNamesF">
-                        </td>
-                    </div>
-                </tr>
-
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="nationalityF">Nationality: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="nationalityF" id="nationalityF">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="dateofissueF">Date of issue: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="date" name="dateofissueF" id="dateofissueF">
-                        </td>
-                    </div>
-                </tr>
-            </table>
-        </fieldset>
-
-        <fieldset>
-            <table>
-                <legend>Mother</legend>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="surnameM">Surname: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="surnameM" id="surnameM">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="givenNamesM">Given Names: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="givenNamesM" id="givenNamesM">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="nationalityM">Nationality: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="text" name="nationalityM" id="nationalityM">
-                        </td>
-                    </div>
-                </tr>
-                <tr>
-                    <div>
-                        <td colspan="3">
-                            <label for="dateofissueM">Date of issue: </label>
-                        </td>
-                        <td colspan="4">
-                            <input type="date" name="dateofissueM" id="dateofissueM">
-                        </td>
-                    </div>
-                </tr>
-            </table>
-        </fieldset>
-        <fieldset>
-            <legend>Registrar</legend>
+        <div class="button">
             <tr>
-                <div>
-                    <td>
-                        <label for="registrar"></label>
-                    </td>
-                    <td>
-                        <input type="text" name="registrar" id="registrar">
-                    </td>
-                </div>
+                <td>
+                    <button>send</button>
+                </td>
             </tr>
-        </fieldset>
-        <tr>
-            <td>
-                <button>send</button>
-            </td>
-        </tr>
+        </div>
 
     </form>
 </body>
