@@ -1,0 +1,30 @@
+.id {
+    color: rgb(103, 39, 39);
+    margin-left: 50px;
+    margin-top: 50px;
+    line-height: 1.5px;
+}
+
+body{
+    background: rgba(151, 146, 66, 0.968);
+    letter-spacing: 2px;
+}
+.id2{
+    color: rgb(209, 159, 94);
+    margin-left: 50px;
+    margin-top: -10px;
+    width: 350px;
+    
+    font-family: monospace;
+}
+.id3{
+    color: rgb(103, 39, 39);
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+p{
+    margin-left: 50px;
+    width: 600px
+   
+}
