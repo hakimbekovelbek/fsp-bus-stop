@@ -1,7 +1,29 @@
-p {
-    color: red;
+html,
+body {
+    background: #fefad7;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
 }
 
-p {
-    font-weight: 700;
+.text {
+    color: #6b6d5f;
+}
+
+.p_1 {
+    color: #fbd898;
+
+}
+
+h1 {
+    margin-bottom: -20px;
+}
+
+.yellow_text {
+    background-color: #fdf5a2;
+    color: #fcad2d;
 }
