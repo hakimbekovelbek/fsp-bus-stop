@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: white;
+    width: 400px;
+    margin-left: 500px;
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/22/08/38/children-817368__480.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+}
+.children{
+    background:purple;
+    width: 450px;
+    border-radius: 5px;
+    
+}
+
+.mom{
+    background: pink;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.dad{
+    background: rgb(105, 63, 63);
+    width: 450px;
+    border-radius: 5px;
+}
+
+.title{
+    background: black;
+    color: azure;
+    text-align: center;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.submit{
+    width: 450px;
+    border-radius: 5px;
+    color: azure;
+    background: #000;
+}
+
+.subm{
+    margin-top: 5px;
+    width: 450px;
+    border-radius: 5px;
+    color: azure;
+    background: #000;
+
+}

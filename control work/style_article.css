@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+.h1{
+    width: 500px;
+    margin-left: 450px;
+    text-align: center left right ;
+    margin-bottom: 10px;
+}
+
+.p {
+    width: 500px;
+    margin-left: 450px;
+    text-align: center right left ;
+    margin-top: 10px;
+
+}
+
+.p1{
+    width: 500px;
+    margin-left: 450px;
+    text-align: center left right ;
+    margin-top:10px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}

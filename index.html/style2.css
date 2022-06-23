@@ -1,0 +1,25 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#square{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+}
+
+#regtangle{
+    width: 150px;
+    height: 90px;
+    border: 5px solid black;
+    margin-top: 10px;
+}
+
+#reverse_regtangle{
+    width: 150px;
+    height: 250px;
+    border: 5px solid purple;
+    margin-top: 10px;
+}

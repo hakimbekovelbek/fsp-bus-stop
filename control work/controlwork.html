@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ravshanow hasan - control work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. статья с new york times (оформить правильно)
+    <q>для цитат</q>
+    <blockquote>тоже для цитат</blockquote>
+    <cite></cite>
+    <img>
+    <figure></figure>
+
+    2. создать форму рождения ребенка (применит стили типографии) поля формы должны быть в таблице  -->
+<!-- <h1>registration</h1> -->
+
+<form action="#"> 
+<legend class="title" >Child registration</legend>
+<fieldset class="children">
+    <!-- <legend>child registration</legend> -->
+    <table >
+
+    <tr>
+        <td><label for="sex" required>Enter a Sex</label></td>
+
+        <td>
+            <select name="sex" id="sex" required>
+                <option value="sex" >Girl</option>
+                <option value="sex" >Boy</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="firstname" >Surname</label></td>
+        <td>
+            <input type="text" name="firstname" id="firstname" placeholder="Smith" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="name">Name</label></td>
+
+        <td>
+            <input type="text" name="name" id="name" placeholder="John" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="fathername">Enter Father's Name</label></td>
+
+        <td>
+            <input type="text" name="fathername" id="fathername" placeholder="Pol's Son or Girl" required>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td><label for="government">Enter a Government</label></td>
+
+        <td>
+            <input type="text" name="government" id="government" placeholder="New York">
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="bornday">Enter Date of Birth</label></td>
+
+        <td>
+            <input type="date" name="bornday" id="bornday" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="id">Enter ID Certificate Of Birth or Passport </label></td>
+
+        <td>
+            <input type="text" name="id" id="id" max="7" min="2"  maxlength="9" placeholder="AA22221856" required>
+        </td>
+    </tr>
+
+
+   
+</table>   
+</fieldset>
+
+<legend class="title">Mother Regirsration</legend>
+
+<fieldset class="mom">
+    
+
+    <table>
+        
+
+
+        <tr>
+            <td><label for="momname">Surname</label></td>
+
+            <td>
+                <input type="text" name="momname" id="momname" placeholder="Jane" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="momfirstname">First Name</label></td>
+        
+            <td>
+                <input type="text" name="momfirstname" id="momfirstname" placeholder="Ssmith" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="momdadname">Enter Father's Name</label></td>
+
+            <td>
+                <input type="text" name="momdadname" id="momdadname" placeholder="Brad's Son or Girl" required>
+            </td>
+        </tr>
+
+            <tr>
+        <td><label for="momcity">Enter a Government</label></td>
+
+        <td>
+            <input type="text" name="momcity" id="momcity" placeholder="New York" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="mombornday">Enter Date Of Birth</label></td>
+
+        <td>
+            <input type="date" name="mombornday" id="mombornday" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="momid">Enter ID Certificate Of Birth or Passport </label></td>
+
+        <td>
+            <input type="text" name="momid" id="momid" max="7" min="2"  maxlength="9" placeholder="AA22221856" required>
+        </td>
+    </tr>
+
+
+    </table>
+</fieldset>
+
+<legend class="title">Father Fegirsration</legend>
+
+<fieldset class="dad">
+    
+    <table>
+        <tr>
+            <td><label for="dadname">Surname</label></td>
+
+            <td>
+                <input type="text" name="momname" id="dadname" placeholder="Pol" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="dadfirstname">First Name</label></td>
+        
+            <td>
+                <input type="text" name="dadfirstname" id="dadfirstname" placeholder="Smith" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="daddadname">Enter Father's Name</label></td>
+
+            <td>
+                <input type="text" name="daddadname" id="daddadname" placeholder="Brad's Son or Girl" required>
+            </td>
+        </tr>
+
+            <tr>
+            <td><label for="dadcity">Enter a Government</label></td>
+
+            <td>
+                <input type="text" name="dadcity" id="dadcity" placeholder="New York" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="dadbornday">Enter Date of birth</label></td>
+
+            <td>
+                <input type="date" name="dadbornday" id="dadbornday" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="age">Enter Your Own Age</label></td>
+
+            <td>
+                <input type="age" name="age" id="age"  maxlength="2" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="dadid">Enter ID Certificate Of Birth or Passport </label></td>
+
+            <td>
+                <input type="text" name="dadid" id="dadid" max="7" min="2" maxlength="9" placeholder="AA2221856" required>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+    </table>
+</fieldset>
+<div>
+    <input type="submit" value="registration" class="submit">
+    <input type="reset" name="" id="" value="reset" class="subm">
+</div>
+</form> 
+
+
+    
+
+
+
+</body>
+</html>
