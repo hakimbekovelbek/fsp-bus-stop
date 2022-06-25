@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.h1{
+    width: 50% ;
+    height: auto;
+    text-align: center ;
+    margin-left: 390px;
+ 
+    
+}
+
+#image{
+margin-left: 420px;
+}
+
+#text_under_image{
+    width: 50%;
+    height: 10px;
+    margin-left: 420px ;
+}
+
+.h5{
+    margin-top: 50px;
+    height: 10px;
+    margin-left: 420px ;
+
+}
+
+.p{
+
+    margin-left: 420px;
+    margin-top: 20px ;
+}
+.p2{
+    width: 50%;
+    margin-left: 420px;
+    margin-top: 20px ;
+}
+
+.tabel{
+    margin-top: 10px ;
+    margin-left: 420px;
+}
+
+.li{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
