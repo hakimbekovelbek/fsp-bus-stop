@@ -1,4 +1,4 @@
-ul{
+/* ul{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -19,4 +19,54 @@ li:fifrst-xhild{
 
 li:last-child{
     padding-top: px;
+} */
+/* 
+body{
+ background: black;
 }
+
+ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 90px;
+    list-style-type: none;
+    padding: 0;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 150px 150px;
+}
+li{
+    border:  2px;
+    padding-top: 5px;
+    
+} */
+
+body > div{
+    display: flex;
+    justify-content: space-around;
+   padding: 0 200pxs;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
