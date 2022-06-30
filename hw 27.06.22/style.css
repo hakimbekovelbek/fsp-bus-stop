@@ -1,0 +1,339 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 -8px;
+    padding: 0 480px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.link_n {
+    color: white;
+    text-decoration: none;
+}
+
+/* SEC 1 */
+.sec1 {
+    height: 70px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 680px;
+
+}
+
+.sec1 a {
+    text-decoration: none;
+    color: #2997ff;
+}
+
+/* SEC 2 */
+.sec2 {
+    background-color: #000;
+    background-image: url("https://www.apple.com/v/macbook-pro-13/m/images/overview/hero_endframe__bsza6x4fldiq_large_2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+    background-size: 950px;
+    margin-top: -40px;
+    height: 700px;
+
+}
+
+.sec2 h2 {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    margin-bottom: -35px;
+}
+
+.sec2 h3 {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.mbplinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 860px;
+}
+
+.mbplinks a {
+    color: #2997ff;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.sec2 figure {
+    display: block;
+    text-align: center;
+}
+
+/* SEC 3 */
+.sec3 {
+    height: 700px;
+    background-image: url("https://www.apple.com/v/macbook-air-m2/b/images/meta/macbook-air-m2_overview__cpmjdgff4i82_og.png?202206240643");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-top: -70px;
+}
+
+.sec3t {
+    line-height: 1;
+    text-align: center;
+    right: 240px;
+    position: relative;
+    padding-top: 200px;
+
+}
+
+.sec3 h2 {
+    margin-bottom: -10px;
+    font-size: 56px;
+    color: rgb(0, 0, 0);
+}
+
+.sec3 h3 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.sec3 p {
+    font-size: 22px;
+    color: #86868b;
+}
+
+.mbalinks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 820px;
+}
+
+.mbalinks a {
+    color: #2997ff;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+
+/* SEC 4  */
+.sec4 {
+    height: 700px;
+    background-color: #f5f5f7;
+    text-align: center;
+}
+
+.sec4 h2 {
+    padding-top: 50px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 56px;
+    color: #1d1d1f;
+
+}
+
+.sec4 h3 {
+    font-size: 28px;
+    color: #1d1d1f;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.sec4 a {
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 22px;
+}
+
+
+.pink {
+    color: #ca2166;
+}
+
+/* SEC 5 */
+.sec5 {
+    display: grid;
+    grid-template-columns: repeat(2, 950px);
+    grid-template-rows: repeat(3, 590px);
+    grid-gap: 1px;
+    margin: 0 10px;
+
+}
+
+
+.sec5_d1 {
+    background-image: url("https://www.apple.com/v/ipad-air/r/images/meta/ipad-air_overview__cahgij9otxua_og.png?202203240739");
+    background-position: 50% 90%;
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+    background-color: #000;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+.sec5_d2 {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/apple-watch-s7-og-202203?wid=600&hei=315&fmt=jpeg&qlt=95&.v=1646504979352");
+    background-position: 50% 90%;
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+    background-color: #f4f4f6;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+
+
+.sec5_d3 {
+    background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/iphone_13_2022_gallery_1_thumb.jpg");
+    background-position: 50% 95%;
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+}
+
+
+.sec5_d4 {
+    background-image: url("https://www.jiomart.com/images/product/original/492849515/apple-iphone-13-pro-max-256-gb-green-digital-o492849515-p591195022-2-202203141415.jpeg");
+    background-position: 50% 95%;
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+}
+
+.sec5_d5 {
+    background-image: url("https://ua-advice.com/wp-content/uploads/2019/03/apple-credit-card.jpg");
+    background-position: 50% 90%;
+    background-size: 600px 300px;
+    background-repeat: no-repeat;
+}
+
+.sec5_d6 {
+    background-image: url("https://hype.my/wp-content/uploads/2022/06/katy.jpg");
+    background-color: #1a1a1a;
+    background-position: 50% 100%;
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+}
+
+.sec5_d1 .air {
+    background-color: #2AA5A0;
+    text-transform: lowercase;
+    font-style: italic;
+    background-image: linear-gradient(50deg, #4f22b9, #618ba7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.sec5_d6 .link a {
+    color: #92df03;
+    text-decoration: none;
+}
+
+.sec5_d2 p {
+    color: #cd262c;
+    margin: 0;
+    padding-left: 0;
+    letter-spacing: 2px;
+}
+
+.text {
+    margin-top: 40px;
+    color: hsl(34, 12, 12);
+    text-align: center;
+}
+
+.h4 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.h5 {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 370px;
+}
+
+.a {
+    color: #2997ff;
+    text-decoration: none;
+}
+
+.hWhite {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SEC 6 */
+/* .sec6 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+
+.l {
+    list-style-type: none;
+}
+
+
+.sec6 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.sec6 h2 {
+    margin-bottom: 1px;
+    font-size: 1.2em;
+
+} */
