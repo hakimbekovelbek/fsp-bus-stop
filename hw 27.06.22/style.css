@@ -56,7 +56,6 @@ nav ul {
     background-size: 950px;
     margin-top: -40px;
     height: 700px;
-
 }
 
 .sec2 h2 {
@@ -97,7 +96,7 @@ nav ul {
 .sec3 {
     height: 700px;
     background-image: url("https://www.apple.com/v/macbook-air-m2/b/images/meta/macbook-air-m2_overview__cpmjdgff4i82_og.png?202206240643");
-    background-position: right bottom;
+    background-position: right 200px bottom;
     background-repeat: no-repeat;
     margin-top: -70px;
 }
@@ -295,29 +294,12 @@ nav ul {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SEC 6 */
-/* .sec6 {
+.sec6 {
     display: flex;
     justify-content: space-between;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding: 0 350px;
+    margin-bottom: 0;
 }
 
 
@@ -328,12 +310,23 @@ nav ul {
 
 .sec6 a {
     text-decoration: none;
-    color: black;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #424245;
 }
 
 
 .sec6 h2 {
     margin-bottom: 1px;
-    font-size: 1.2em;
+    color: #2c2c2e;
+    font-size: 18px;
+    font-weight: normal;
 
-} */
+}
+
+.line {
+    margin-top: 10px;
+    margin-left: 389px;
+    width: 1150px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
