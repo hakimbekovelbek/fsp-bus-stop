@@ -138,7 +138,6 @@ nav ul {
     text-decoration: none;
 }
 
-
 /* SEC 4  */
 .sec4 {
     height: 700px;
@@ -189,7 +188,6 @@ nav ul {
 
 }
 
-
 .sec5_d1 {
     background-image: url("https://www.apple.com/v/ipad-air/r/images/meta/ipad-air_overview__cahgij9otxua_og.png?202203240739");
     background-position: 50% 90%;
@@ -209,8 +207,6 @@ nav ul {
     margin-top: 10px;
     padding-left: 50px;
 }
-
-
 
 .sec5_d3 {
     background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/iphone_13_2022_gallery_1_thumb.jpg");
@@ -250,7 +246,6 @@ nav ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .sec5_d6 .link a {
     color: #92df03;
@@ -307,11 +302,9 @@ nav ul {
     margin-bottom: 0;
 }
 
-
 .l {
     list-style-type: none;
 }
-
 
 .sec6 a {
     text-decoration: none;
@@ -319,7 +312,6 @@ nav ul {
     font-weight: lighter;
     color: #424245;
 }
-
 
 .sec6 h2 {
     margin-bottom: 1px;

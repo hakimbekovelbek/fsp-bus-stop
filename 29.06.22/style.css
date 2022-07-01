@@ -1,0 +1,12 @@
+body {
+    background: url(./cat1.png) no-repeat,
+        url(./cat2.png) no-repeat,
+        url("https://i.pinimg.com/originals/9a/49/f9/9a49f9d4aafb3bceb1b20a810240e02f.png") no-repeat,
+        url("./rainbow.png") no-repeat,
+        url("https://www.onlygfx.com/wp-content/uploads/2018/09/4-clipart-sun-1.png") no-repeat;
+
+    background-position: 500px 700px, 800px 690px, 20px 530px, 160px 100px, 1700px 10px;
+    background-size: 300px, 300px, 1900px, 1700px, 200px;
+    background-color: #acd8e5;
+
+}
