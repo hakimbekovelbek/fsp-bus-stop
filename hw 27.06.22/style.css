@@ -36,9 +36,9 @@ nav ul {
     height: 70px;
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 680px;
+    column-gap: 30px;
 
 }
 
@@ -76,9 +76,9 @@ nav ul {
 
 .mbplinks {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 860px;
+    column-gap: 30px;
 }
 
 .mbplinks a {
@@ -128,8 +128,8 @@ nav ul {
 
 .mbalinks {
     display: flex;
-    justify-content: space-between;
-    padding: 0 820px;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .mbalinks a {
@@ -280,9 +280,9 @@ nav ul {
 
 .link {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 370px;
+    column-gap: 30px;
 }
 
 .a {
