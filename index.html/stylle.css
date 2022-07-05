@@ -42,20 +42,76 @@ li{
     padding-top: 5px;
     
 } */
-
+/* 
 body > div{
     display: flex;
     justify-content: space-around;
    padding: 0 200pxs;
    
+} */
+
+/* 
+body{
+    margin: 0;
+} */
+
+/* 
+ul{
+    display: flex;
+    flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: center; */
+    /* justify-content: space-between;
+    align-items: center; */
+    /* align-content: flex-start ; */
+    /* height: 200px;
+    /* gap: 30px; */
+    /* overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: 10px solid #fc2;
+    list-style-type: none; 
+
 }
+/* 
+li{
+    width: 200px;
+    border: 3px solid black;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 250px; */
+    /* flex: 0 1 250px; */
+    /* flex-grow: ; 
+    flex-shrink: ;
+    flex-basis: ; */
+    
+    
+    
+   
+    
+
+/* } */
+
+/* 
+li:first-child{
+    /* align-self: flex-start; */
+    /* flex-grow: 5; */
+    /* flex-shrink: 5;
+}  */
 
 
 
+body{
 
+    background: rgb(116, 116, 222);
+    background-image: url(https://static.wixstatic.com/media/2cd43b_82c095ac2f7446839d199a98506b87ae~mv2_d_1440_1440_s_2.png/v1/fill/w_320,h_320,q_90/2cd43b_82c095ac2f7446839d199a98506b87ae~mv2_d_1440_1440_s_2.png), url(https://avatanplus.com/files/resources/original/574948d5846a3154f6448226.png),  url(https://i.pinimg.com/originals/50/96/d6/5096d63c151123046ae779783dca1c4b.png), url(https://cdn.picpng.com/grass/grass-illustration-24505.png), url(https://www.freepnglogos.com/uploads/rainbow-png/rainbow-png-images-colors-the-sky-png-only-0.png)   ;
 
+    background-repeat: no-repeat;
+    background-position: 90%   10%, 30% -100%,  90% -100%,10% -120%, 15% -5% ;
+    
+    
 
-
+}
 
 
 
