@@ -4,201 +4,149 @@
     padding: 0;
 }
 
-.t1 .red {
+.red-outline {
+    border: 1px solid red;
+}
+
+.blue-outline {
+    border: 1px solid blue;
+}
+
+.green-outline {
+    border: 1px solid green;
+}
+
+.red-bc {
+    background-color: #ff8888;
+}
+
+.blue-bc {
+    background-color: #7e89eb;
+}
+
+.green-bc {
+    background-color: #4dee99;
+}
+
+.red,
+.blue,
+.green {
     width: 100px;
     height: 100px;
-    border: 1px solid red;
     position: relative;
+}
+
+.t1 .red {
     top: 50px;
     left: 50px;
 }
 
 .t1 .blue {
-    width: 100px;
-    height: 100px;
-    border: 1px solid blue;
-    position: relative;
     top: 70px;
     left: 180px;
 }
 
 .t1 .green {
-    width: 100px;
-    height: 100px;
-    border: 1px solid green;
-    position: relative;
     top: 90px;
     left: 320px;
 }
 
 
 .t2 .red {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    position: relative;
     top: 200px;
     left: 50px;
 }
 
 .t2 .blue {
-    width: 100px;
-    height: 100px;
-    border: 1px solid blue;
-    position: relative;
     top: 100px;
     left: 180px;
 }
 
 .t2 .green {
-    width: 100px;
-    height: 100px;
-    border: 1px solid green;
-    position: relative;
     top: 0;
     left: 310px;
 }
 
 .t3 .red {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-    position: relative;
     top: 50px;
     left: 50px;
 }
 
 .t3 .blue {
-    width: 100px;
-    height: 100px;
-    border: 1px solid blue;
-    position: relative;
     top: 20px;
     left: 100px;
 }
 
 .t3 .green {
-    width: 100px;
-    height: 100px;
-    border: 1px solid green;
-    position: relative;
     top: -10px;
     left: 150px;
 }
 
 
 .t4 .red {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8888;
-    position: relative;
     top: 50px;
     left: 50px;
 }
 
 .t4 .blue {
-    width: 100px;
-    height: 100px;
-    background-color: #7e89eb;
-    position: relative;
     top: 20px;
     left: 100px;
 }
 
 .t4 .green {
-    width: 100px;
-    height: 100px;
-    background-color: #4dee99;
-    position: relative;
     top: -10px;
     left: 150px;
 }
 
 .t5 .red {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8888;
-    position: relative;
     top: 50px;
     left: 50px;
     z-index: 10;
 }
 
 .t5 .blue {
-    width: 100px;
-    height: 100px;
-    background-color: #7e89eb;
-    position: relative;
     top: 20px;
     left: 100px;
     z-index: 30;
 }
 
 .t5 .green {
-    width: 100px;
-    height: 100px;
-    background-color: #4dee99;
-    position: relative;
     top: -10px;
     left: 150px;
     z-index: 20;
 }
 
 .t6 .red {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8888;
-    position: relative;
     top: 50px;
     left: 50px;
     z-index: 30;
 }
 
 .t6 .blue {
-    width: 100px;
-    height: 100px;
-    background-color: #7e89eb;
-    position: relative;
     top: 20px;
     left: 100px;
     z-index: 10;
 }
 
 .t6 .green {
-    width: 100px;
-    height: 100px;
-    background-color: #4dee99;
-    position: relative;
     top: -10px;
     left: 150px;
     z-index: 30;
 }
 
 .t7 .red {
-    width: 100px;
-    height: 100px;
-    background-color: #ff8888;
-    position: relative;
     top: 50px;
     left: 50px;
     z-index: 30;
 }
 
 .t7 .blue {
-    width: 100px;
-    height: 100px;
-    background-color: #7e89eb;
-    position: relative;
     top: 20px;
     left: 100px;
     z-index: 20;
 }
 
 .t7 .green {
-    width: 100px;
-    height: 100px;
-    background-color: #4dee99;
-    position: relative;
     top: -10px;
     left: 150px;
     z-index: 10;

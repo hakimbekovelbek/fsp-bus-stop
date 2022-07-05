@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    left: 30%;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+}
+
+.br {
+    border-radius: 50%;
+}
+
+.bcw {
+    background-color: #fff;
+}
+
+
+/* ------------T1----------- */
+.t1 .p {
+    width: 700px;
+    height: 600px;
+    border: 2px solid green;
+    top: 50px;
+}
+
+.t1 .ch {
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    top: 150px;
+    left: 150px;
+}
+
+
+/* ------------T2----------- */
+.t2 .p {
+    width: 700px;
+    height: 600px;
+    background-color: #4dee99;
+    top: 150px;
+}
+
+.t2 .ch {
+    width: 150px;
+    height: 150px;
+}
+
+.t2 .ch1 {
+    top: 80px;
+    left: 80px;
+}
+
+.t2 .ch2 {
+    bottom: 80px;
+    right: 80px;
+}
+
+
+/* ------------T3----------- */
+.t3 .p {
+    height: 550px;
+    width: 270px;
+    border: 2px solid #000;
+    top: 200px;
+}
+
+.t3 .ch {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    left: 60px;
+}
+
+.t3 .ch1 {
+    background-color: red;
+    top: 40px;
+}
+
+.t3 .ch2 {
+    background-color: yellow;
+    top: 200px;
+}
+
+.t3 .ch3 {
+    background-color: green;
+    top: 360px;
+}
+
+/* ------------T4----------- */
+.t4 .p {
+    width: 600px;
+    height: 600px;
+    background-color: #4dee99;
+    top: 250px;
+}
+
+.t4 .ch1 {
+    width: 130px;
+    height: 130px;
+    top: 100px;
+    left: 100px;
+}
+
+.t4 .ch2 {
+    width: 130px;
+    height: 130px;
+    top: 100px;
+    right: 100px;
+}
+
+.t4 .ch3 {
+    width: 80px;
+    height: 80px;
+    top: 250px;
+    left: 260px;
+}
+
+.t4 .ch4 {
+    width: 250px;
+    height: 30px;
+    bottom: 140px;
+    left: 180px;
+}
+
+/* ------------T5----------- */
+.t5 .p {
+    width: 550px;
+    height: 550px;
+    background-color: #c4c721;
+    top: 300px;
+}
+
+.t5 .ch1 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+}
+
+.t5 .ch2 {
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 100px;
+}
+
+.t5 .ch3 {
+    width: 90px;
+    height: 90px;
+    top: 240px;
+    left: 235px;
+}
+
+.t5 .ch4 {
+    width: 250px;
+    height: 250px;
+    bottom: 80px;
+    left: 150px;
+    border-bottom: 40px solid white;
+}
