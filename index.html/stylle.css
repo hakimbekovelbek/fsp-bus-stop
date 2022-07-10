@@ -56,8 +56,8 @@ body{
 }
 
 
-ul{
-    /* display: flex; */
+ /*ul{
+     display: flex; */
     /* flex-direction: row;  */
     /* flex-wrap: wrap-reverse; 
     justify-content: center; 
@@ -70,9 +70,9 @@ ul{
     padding: 0;
     margin: 0; */
     /* border: 10px solid #fc2; */
-    /* list-style-type: none;  */
+    /* list-style-type: none; 
 
-}
+}  */
 
 /* li{ */
     /* width: 200px; */
