@@ -8,6 +8,9 @@ body{
     background: orange;
 }
 
+.id{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 form {
     background: white;
@@ -21,14 +24,14 @@ form {
 
 input{
     width: 300px;
-    margin-top: 10px;
     height: 30px;
+    margin-top: 10px;
     border-radius: 10px;
     text-align: center;
 
 }
 
-textarea{
+textarea{   
     width: 300px;
     margin-top: 10px;
     border-radius: 10px;
@@ -36,7 +39,7 @@ textarea{
 
 }
 h1{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: normal;
     margin-left: -150px;
 }
@@ -44,5 +47,6 @@ h1{
 
 #submit{
     background: orange;
+
     
 }
