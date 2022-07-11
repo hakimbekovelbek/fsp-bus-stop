@@ -1,15 +1,10 @@
 
 
-
 # ?   beruniy -- A
 # ?               tinchli --B
 # ?                           chorsu --C
 # ?                                      qafur_qulom --D
 # ?                                                     alisher_anvoiy --e
-
-
-
-
 
 
 import datetime
@@ -34,11 +29,11 @@ def bus_stop():
 
         if z > 1:
             if gt > 60:
-                o = 28 - ((gt - (gt // 10) * 10 ))
+                o = 28 - ((gt - (gt // 10) * 10))
                 print(f'{"104"}, destination "tinchli" {o}')
                 t = (gt - ((gt // 10) * 10))
                 print(f'{"434"} destination "beruniu" {t}')
-            
+
             else:
                 print('blin')
 
@@ -110,5 +105,5 @@ def bus_stop():
         else:
             print('fuck off')
 
-bus_stop()
 
+bus_stop()
