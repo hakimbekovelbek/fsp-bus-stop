@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+
+
+
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+
+#box1{
+    background: red;
+    animation: move 1s  infinite ;
+
+}
+
+#box2{
+    background: orange;
+    animation: move 1s  infinite 100ms ;
+
+}
+
+#box3{
+    background: blue;
+    animation: move 1s  infinite 200ms ;
+
+}
+
+
+@keyframes move {
+    0%{
+        transform: translate(0) scale(1.1, 0.6);
+    }
+
+    20%{
+        transform: scale(1.1) ;
+    }
+
+    50%{
+        transform: translateY(-500px) ;
+    }
+
+    100%{
+        transform: translateY(0) scale(1.1, 0.6);
+    }
+
+
+}
+
+
