@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Oswald', sans-serif;
+    --primary: #0057ff;
+    --primary-dark: #003db7;
+    --primary-light: #0146cf;
+    --black: #000;
+    --orange-button: #FFA332;
+    --white: #fff;
+    --light-grey: #E7E7E7;
+    --grey: #999;
+    --dark-grey: #222222;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
