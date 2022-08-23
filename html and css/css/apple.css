@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow";
+}
+
+
+
+
+.first {
+    color: white;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    height: 500px;
+    background-image: url("https://www.ixbt.com/img/n1/news/2022/5/1/2EBE0510-CE7F-4F67-8248-46EE267D6ED3_large.png");
+    background-size: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.top {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+a {
+    color: #2997ff;
+}
+
+
+.href {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    color: #2997ff;
+    /* justify-content: center;  */
+
+}
+
+.first .white {
+    text-decoration: none;
+    color: white;
+}
+
+.second {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("https://img-cdn.tinkoffjournal.ru/i/dTk7qMPgreHLfxNRS9XZ4OPj-Zd_zDQyUg--N7LWnXs/w:1200/aHR0cHM6Ly9pbWct/Y2RuLnRpbmtvZmZq/b3VybmFsLnJ1Ly0v/YXBwbGUtd3dkYy0y/MDIyLTMuZmRxaTl6/LmpwZw");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 700px;
+    margin: 0;
+}
+
+.left,
+.right {
+    width: 50vw;
+    height: calc(100vw / 2);
+    padding: 40px;
+    text-align: center;
+    /* font-family: serif; */
+    padding-bottom: 20pxx;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.cont {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.href_second {
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    color: #2997ff;
+}
+
+.img_text_2 {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.second>img {
+    width: 100%;
+    padding-left: 500px;
+}
+
+.img_text img {
+    width: 70px;
+    padding-top: 0;
+}
+
+#m2_small {
+    width: 40px;
+    height: 40px;
+}
+
+.img_text p {
+    display: inline-block;
+    margin: 0;
+}
+
+.img_text {
+    padding-top: 0;
+}
+
+.third {
+    /* display: flex; */
+    background-color: #f6f6f8;
+    text-align: center;
+    background-size: 500px 500px;
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/bts-header-giftcard-202206?wid=1120&hei=1074&fmt=jpeg&qlt=90&.v=1655326451200");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    justify-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+
+    justify-items: center;
+
+}
+
+
+.gradient {
+    font-family: 'Yellowtail', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    background-image: linear-gradient(to bottom, #7e2fa8, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.head h1 {
+    width: 145px;
+}
+
+
+
+.left1 {
+    color: #f6f6f8;
+    background-image: url("https://www.apple.com/v/ipad-air/r/images/overview/features/iris__fnhnshkpwl6y_large.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 500px;
+    background-color: black;
+    justify-items: center;
+    width: 700px;
+}
+
+.red {
+    color: #cd1b22;
+}
+
+.right2 {
+    background-image: url("https://www.apple.com/v/home/aq/images/heroes/watch-series-7/hero_watch_lte__b8er858e34gi_small.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center bottom;
+    width: 50vw;
+}
+
+.left3 {
+    background-image: url("https://www.apple.com/v/home/aq/images/heroes/iphone-13/hero_iphone13_avail__gnqqkzuai6um_medium.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: center bottom;
+}
+
+.right4 {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/iphone-13-pro/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+}
+
+.left5 {
+
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/apple-card/tile__cauwwcyyn9hy_medium_2x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+    background-size: 600px;
+}
+
+.right6 {
+    color: white;
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/apple-fitness-plus-katy-perry/promo_katy_perry__eqekd92guu4i_medium_2x.jpg");
+    background-position: bottom;
+    height: 500px;
+    background-size: 600px;
+}
+
+.headline span {
+    color: #ca2166ff;
+    flex-direction: row;
+
+
+}
+
+.navigation_bar {
+    display: flex;
+    font-style: 13px;
+    background-color: #313132;
+    height: 45px;
+    color: #d6d6d6;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 19.5vw;
+}
+
+
+
+ul {
+    position: sticky;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none;
+
+}
+
+.cont button {
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}

@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+} */
+.square {
+    /* margin: auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    border: 2px solid red;
+}
+
+.blue {
+    border: 2px solid blue;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.first,
+.second,
+.third,
+.forth,
+.fifth,
+.sixth,
+.seventh {
+    padding: 30px;
+}
+
+.first .square:nth-of-type(2) {
+    position: relative;
+    top: 25px;
+    left: 125px;
+}
+
+.first .square:nth-of-type(3) {
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+
+
+.second .square:nth-of-type(2) {
+    position: relative;
+    bottom: 100px;
+    left: 125px;
+}
+
+.second .square:nth-of-type(3) {
+    position: relative;
+    bottom: 200px;
+    left: 250px;
+}
+
+.third .square:nth-of-type(2) {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+}
+
+.third .square:nth-of-type(3) {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+}
+
+.forth .square,
+.fifth .square,
+.sixthth .square,
+.seventh .square {
+    border: none;
+}
+
+.forth .red,
+.fifth .red,
+.sixth .red,
+.seventh .red {
+    background-color: rgb(254, 103, 103);
+}
+
+.forth .blue,
+.fifth .blue,
+.sixth .blue,
+.seventh .blue {
+    background-color: rgb(124, 124, 255);
+}
+
+.forth .green {
+    background-color: rgb(85, 199, 85);
+}
+
+.forth .square:nth-of-type(2) {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+}
+
+.forth .square:nth-of-type(3) {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+}
+
+.fifth .green {
+    background-color: rgb(85, 199, 85);
+}
+
+.fifth .square:first-of-type {
+    position: relative;
+    z-index: 1;
+}
+
+.fifth .square:nth-of-type(2) {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    z-index: 2;
+}
+
+.fifth .square:nth-of-type(3) {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+    z-index: 1;
+}
+
+.sixth .square {
+    border: none;
+}
+
+.sixth .blue {
+    background-color: rgb(124, 124, 255);
+}
+
+.sixth .green,
+.seventh .green {
+    background-color: rgb(93, 202, 93);
+}
+
+.sixth .square:first-of-type {
+    position: relative;
+    z-index: 2;
+}
+
+.sixth .square:nth-of-type(2) {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    z-index: 1;
+}
+
+.sixth .square:nth-of-type(3) {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+    z-index: 2;
+}
+
+.seventh .square:first-of-type {
+    position: relative;
+    z-index: 3;
+}
+
+.seventh .square:nth-of-type(2) {
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    z-index: 2;
+}
+
+.seventh .square:nth-of-type(3) {
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+    z-index: 1;
+}
+
+.eighth,
+.ninth {
+    padding: 20px 40px;
+}
+
+.eighth .green,
+.ninth .filled-green-square,
+.eleventh .filled-green-square {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.eighth .red {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.ninth .filled-green-square,
+.eleventh .filled-green-square {
+    background-color: rgb(87, 244, 158);
+}
+
+.ninth .white {
+    background-color: #fff;
+}
+
+.ninth .square:first-of-type {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.ninth .square:nth-of-type(2) {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+}
+
+.outlined {
+    border: 1px solid black;
+}
+
+.tenth .rectangle {
+    left: calc(50% - 100px);
+    top: calc(50% - 64px);
+    position: relative;
+    width: 260px;
+    height: 480px;
+}
+
+.circle {
+    left: calc(50% - 59px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+.red-filled {
+    background-color: red;
+    top: 8%;
+}
+
+.yellow-filled {
+    background-color: yellow;
+    top: 38%;
+}
+
+.green-filled {
+    background-color: green;
+    top: 68%;
+}
+
+.eleventh .filled-green-square {
+    position: relative;
+    border-radius: 50%;
+}
+
+.white-filled {
+    background-color: #fff;
+}
+
+.small-square {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.eleventh .mouth {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: calc(50% - 140px);
+    bottom: 20%;
+}
+
+.eleventh .circle {
+    position: absolute;
+    top: 20%;
+}
+
+.eleventh .circle:first-of-type {
+    left: 20%;
+}
+
+.eleventh .circle:nth-of-type(2) {
+    left: 60%;
+}
+
+.eleventh .small-square {
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+
+.yellow-filled-circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(213, 213, 75);
+}
+
+.twelfth .mouth {
+    width: 200px;
+    height: 190px;
+    border-radius: 45%;
+    border-bottom: 35px solid white;
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+}
+
+.twelfth .circle {
+    top: 20%;
+    width: 110px;
+    height: 110px;
+}
+
+.twelfth .circle:first-of-type {
+    left: 20%;
+}
+
+.twelfth .circle:nth-of-type(2) {
+    left: 60%;
+}
+
+.twelfth .small-square {
+    border-radius: 50%;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}

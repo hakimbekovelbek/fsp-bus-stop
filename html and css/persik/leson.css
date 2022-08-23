@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(133, 179, 248);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, 300px, 100vw, 80vw, 250px;
+    background-position: 10% -120%, 70% -130%, 50% -80%, 50% -19%, 90% -5%;
+    background-image: url("./cat1.png"), url("./cat2.png"), url("https://i.pinimg.com/originals/9a/49/f9/9a49f9d4aafb3bceb1b20a810240e02f.png"), url("./rainbow.png"), url("./sun.png");
+}

@@ -1,0 +1,62 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pic {
+    height: 200vh;
+    height: 100vh;
+    border: 50px solid rgba(222, 184, 135, 0.577);
+    background-image: url(hhttps://pngicon.ru/file/uploads/kamin.png), url(https://avatanplus.com/files/resources/original/57ac27f7bcf92156787c1fde.png), url(https://pngicon.ru/file/uploads/kamin.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    background-size: 150px, 200px, 400px;
+    background-position: 85% 101.5%, 20% 101.5%, center 130%;
+} */
+
+
+
+.left,
+.right {
+    width: 50%;
+    height: calc(100vw / 2);
+    padding: 60px;
+    text-align: center;
+    /* font-family: serif; */
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
